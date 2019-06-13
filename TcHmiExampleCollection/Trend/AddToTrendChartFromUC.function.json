@@ -1,0 +1,39 @@
+﻿{
+  "function": {
+    "name": "AddToTrendChartFromUC",
+    "displayName": "AddToTrendChartFromUC",
+    "visible": true,
+    "category": "Trend",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "arguments": [
+      {
+        "name": "TrendChartList",
+        "displayName": "TrendChartList",
+        "type": "tchmi:project#/definitions/Symbol_Of_TrendLineChartLineGraphDescriptionDefinitionList",
+        "description": "",
+        "defaultValue": "\r\n  {\r\n    \"lineWidth\": 1,\r\n    \"pointDot\": false,\r\n    \"pointDotRadius\": 3,\r\n    \"pointDotStrokeWidth\": 1,\r\n    \"lineColor\": {\r\n      \"color\": \"rgba(71, 148, 218, 1)\"\r\n    },\r\n    \"pointDotFillColor\": {\r\n      \"color\": \"rgba(71, 148, 218, 1)\"\r\n    },\r\n    \"pointDotStrokeColor\": {\r\n      \"color\": \"rgba(71, 148, 218, 1)\"\r\n    },\r\n    \"pointDotInStopMode\": true\r\n  }\r\n]",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true
+      },
+      {
+        "name": "TrendChartYList",
+        "displayName": "TrendChartYList",
+        "type": "tchmi:project#/definitions/Symbol_Of_ChartYAxisDefinitionList",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

@@ -1,0 +1,28 @@
+﻿{
+  "function": {
+    "name": "PopupCloseThis",
+    "displayName": "PopupCloseThis",
+    "visible": true,
+    "category": "ControlPopup",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "arguments": [
+      {
+        "name": "objectAround",
+        "displayName": "objectAround",
+        "type": "tchmi:general#/definitions/Object",
+        "description": "",
+        "defaultValue": {},
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

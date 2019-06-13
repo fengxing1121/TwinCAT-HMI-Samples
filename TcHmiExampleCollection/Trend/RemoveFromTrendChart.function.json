@@ -1,0 +1,50 @@
+﻿{
+  "function": {
+    "name": "RemoveFromTrendChart",
+    "displayName": "RemoveFromTrendChart",
+    "visible": true,
+    "category": "Trend",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "arguments": [
+      {
+        "name": "SymbolToRemove",
+        "displayName": "SymbolToRemove",
+        "type": "tchmi:general#/definitions/Object",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "TrendChartList",
+        "displayName": "TrendChartList",
+        "type": "tchmi:project#/definitions/Symbol_Of_TrendLineChartLineGraphDescriptionDefinitionList",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true
+      },
+      {
+        "name": "TrendChartYList",
+        "displayName": "TrendChartYList",
+        "type": "tchmi:project#/definitions/Symbol_Of_ChartYAxisDefinitionList",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

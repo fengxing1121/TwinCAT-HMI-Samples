@@ -1,0 +1,16 @@
+{
+    "historizedSymbolList": {
+        "PLC1.SCOPE.Sinus_Fast50": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 10000
+        },
+        "PLC1.SCOPE.Sinus_Slow20": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 10000
+        }
+    }
+}

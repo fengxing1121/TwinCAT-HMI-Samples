@@ -1,0 +1,28 @@
+﻿[
+  {
+    "isNew": false,
+    "profileName": "local",
+    "publishMode": "TcHmi",
+    "targetDirectory": "",
+    "server": null,
+    "sitePath": null,
+    "destinationUrl": null,
+    "passiveMode": true,
+    "savePassword": true,
+    "deleteAllFilesBeforePublish": false,
+    "deleteExtensionDataBeforePublish": false,
+    "abortOnErrors": true,
+    "userName": null,
+    "encryptedPassword": null,
+    "tcHmiServerHost": null,
+    "tcHmiServerPort": "1020",
+    "socketTimeout": "45",
+    "tcHmiUseTLS": true,
+    "tcHmiServerUserName": "__SystemAdministrator",
+    "encryptedTcHmiServerPassword": null,
+    "tcHmiDestinationUrl": null,
+    "publishConfiguration": "remote",
+    "tcHmiSavePassword": true,
+    "tcHmiIgnoreCertificateErrors": true
+  }
+]

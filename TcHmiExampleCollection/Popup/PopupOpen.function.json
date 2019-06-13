@@ -1,0 +1,116 @@
+﻿{
+  "function": {
+    "name": "PopupOpen",
+    "displayName": "PopupOpen",
+    "visible": true,
+    "category": "ControlPopup",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "arguments": [
+      {
+        "name": "Content",
+        "displayName": "Content",
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Content to open",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "HorizontalAlignment",
+        "displayName": "HorizontalAlignment",
+        "type": "tchmi:framework#/definitions/HorizontalAlignment",
+        "description": "",
+        "defaultValue": "Left",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "VerticalAlignment",
+        "displayName": "VerticalAlignment",
+        "type": "tchmi:framework#/definitions/VerticalAlignment",
+        "description": "",
+        "defaultValue": "Top",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "HorizontalDistance",
+        "displayName": "HorizontalDistance",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "VerticalDistance",
+        "displayName": "VerticalDistance",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "Height",
+        "displayName": "Height",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "Width",
+        "displayName": "Width",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "WhereToInsert",
+        "displayName": "WhereToInsert",
+        "type": "tchmi:framework#/definitions/Control",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "PopParameters",
+        "displayName": "PopParameters",
+        "type": "tchmi:project#/definitions/Symbol_Of_Object",
+        "description": "Insert binding values here! (Rest)",
+        "defaultValue": "{}",
+        "required": true,
+        "bindable": true,
+        "restParameter": true,
+        "asReference": true
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

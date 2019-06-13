@@ -1,0 +1,33 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "Popup_Actuator": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "Popup\\Actuator.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Popup_Actuator"
+    },
+    "Popup_ActuatorPopup": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "Popup\\ActuatorPopup.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Popup_ActuatorPopup"
+    },
+    "Symbol_Of_Object": {
+      "allOf": [
+        {
+          "$ref": "tchmi:framework#/definitions/Symbol"
+        },
+        {
+          "frameworkSymbolSubType": {
+            "$ref": "tchmi:general#/definitions/Object"
+          }
+        }
+      ]
+    }
+  }
+}
