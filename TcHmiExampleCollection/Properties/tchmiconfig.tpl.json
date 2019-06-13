@@ -83,6 +83,9 @@
     },
     {
       "url": "Scripts/DecimalFormatter.js"
+    },
+    {
+      "url": "Scripts/WriteToSymbolProperty.js"
     }
   ],
   "symbols": {

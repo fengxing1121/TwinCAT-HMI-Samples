@@ -3,10 +3,10 @@
     "name": "PopupCloseThis",
     "displayName": "PopupCloseThis",
     "visible": true,
-    "category": "ControlPopup",
+    "category": "Popup",
     "waitMode": "Synchronous",
     "injectContextObject": false,
-    "description": "",
+    "description": "Closes the object it is called from",
     "returnValue": {
       "type": "tchmi:general#/definitions/String"
     },
@@ -16,7 +16,7 @@
         "displayName": "objectAround",
         "type": "tchmi:general#/definitions/Object",
         "description": "",
-        "defaultValue": {},
+        "defaultValue": "{}",
         "required": true,
         "bindable": true,
         "restParameter": false,

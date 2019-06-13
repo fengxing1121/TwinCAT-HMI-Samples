@@ -11,9 +11,9 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiExampleCollection</Name>
-    <HmiCommunicationRouterPort>10101</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10102</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
-    <HmiCommunicationServerPort>3000</HmiCommunicationServerPort>
+    <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.203</HmiInitial>
     <HmiRecent>1.10.1336.203</HmiRecent>
     <CodeBehindOrder>Scripts\TcHmiExampleCollection.js,Trend\TcHmiExampleCollection.Trendline.js,Scripts\TcHmiExampleCollection.Utilities.js,Trend\AddToTrendChart.js,Trend\AddToTrendChartFromUC.js,Trend\GetHistorizedToComboBox.js,Trend\RemoveFromTrendChart.js,Popup\PopupCloseThis.js,Popup\PopupOpen.js,Scripts\DecimalFormatter.js,Scripts\DegreesToRotation.js</CodeBehindOrder>
@@ -134,6 +134,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\TcHmiExampleCollection.Utilities.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\WriteToSymbolProperty.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\WriteToSymbolProperty.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Trend\AddToTrendChart.function.json">

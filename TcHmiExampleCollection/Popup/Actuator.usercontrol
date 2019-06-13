@@ -3,7 +3,7 @@
      data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
      data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
 
-<div id="ActuatorIcon" data-tchmi-type="tchmi-image" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-src="Images/Icons/Actuators/blue_sani_valve_30.svg" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5">
+<div id="ActuatorIcon" data-tchmi-type="tchmi-image" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-src="%pp%Icon%/pp%" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -34,22 +34,22 @@
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:general#/definitions/Number",
-            "value": null
+            "value": 0.0
           },
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:general#/definitions/Number",
-            "value": null
+            "value": 0.0
           },
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:general#/definitions/Number",
-            "value": null
+            "value": 150.0
           },
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:general#/definitions/Number",
-            "value": null
+            "value": 150.0
           },
           {
             "objectType": "Symbol",
@@ -57,8 +57,17 @@
             "symbolExpression": "%ctrl%Desktop%/ctrl%"
           },
           {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Boolean",
+            "value": true
+          },
+          {
             "objectType": "Symbol",
             "symbolExpression": "%pp%Parameters%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "symbolExpression": "%pp%Value%/pp%"
           }
         ],
         "asyncWait": true
@@ -70,6 +79,16 @@
 </div>
 
 <div id="TcHmiTextblock" data-tchmi-type="tchmi-textblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="%f%DecimalFormatter(%pp%Value%/pp%,0)+'°'%/f%" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold">
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(37, 158, 205, 1)"
+}
+</script>
+</div>
+
+<div id="TcHmiTextblock_13" data-tchmi-type="tchmi-textblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="2" data-tchmi-left-unit="px" data-tchmi-text="%pp%PointName%/pp%" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="2" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-top="2">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">

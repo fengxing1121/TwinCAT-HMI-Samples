@@ -9,34 +9,54 @@
 
 (function (TcHmi) {
 
-    var PopupOpen = function (Content,HorizontalAlignment,VerticalAlignment,HorizontalDistance,VerticalDistance,Height,Width,WhereToInsert) {
+    var PopupOpen = function (Content,HorizontalAlignment,VerticalAlignment,HorizontalDistance,VerticalDistance,Height,Width,WhereToInsert,AddWhereclicked) {
         if (TcHmi.Controls.get(String('PopupInstance'+Content)) || Content == null) {
             return;
         }
-        var PopParameterIndex;
-        var popupParameters = {};
+        var PopupUuid = String(TcHmiExampleCollection.Utilities.generateUuidv4());
+        var PopParameterStartIndex;
+        var popupParameters = [];
+        var PopParameters = [];
 
         for (var i = 0; i < this.__fnDescr.function.arguments.length; i++) {
             if (this.__fnDescr.function.arguments[i].name == "PopParameters") {
-                PopParameterIndex = i;
+                PopParameterStartIndex = i;
                 break;
             }
         }
-        PopParameters = this.__f.fnParams[PopParameterIndex];
-        if (PopParameters.symbolExpression.search("%pp%") > -1) {
-            var originControl = TcHmi.Controls.get(PopParameters.symbolExpression.replace("%pp%","").replace("%/pp%","").split(".")[0]);
-            if (originControl) {
-                var symbolExpression = TcHmi.Binding.resolveEx('Parameters', originControl);
-                if (symbolExpression) {
-                    // Binding exists
-                    popupParameters['data-tchmi-parameters'] = symbolExpression;
-                    //console.log(originControl.getId() + '::Text is bound to symbol expression: ' + symbolExpression.toString());
-                } else {
-                    // Binding exists not
+        for (var a = PopParameterStartIndex; a < this.__f.fnParams.length; a++) {
+            PopParameters[PopParameters.length] = this.__f.fnParams[a];
+        }
+        for (var b = 0; b < PopParameters.length; b++) {
+            if (PopParameters[b].symbolExpression.search("%pp%") > -1) {
+                var originControl = TcHmi.Controls.get(PopParameters[b].symbolExpression.replace("%pp%", "").replace("%/pp%", "").split(".")[0]);
+                if (originControl) {
+                    var symbolExpression = TcHmi.Binding.resolveEx('Parameters', originControl);
+                    if (symbolExpression) {
+                        if (symbolExpression.toString().toLowerCase().search("parameters")>-1) {
+                            popupParameters['data-tchmi-parameters'] = symbolExpression.toString();
+                        }
+                        if (symbolExpression.toString().toLowerCase().search("value")>-1) {
+                            popupParameters['data-tchmi-value'] = symbolExpression.toString();
+                        }
+                    } else {
+                        // Binding exists not
+                    }
+                    var symbolExpression = TcHmi.Binding.resolveEx('Value', originControl);
+                    if (symbolExpression) {
+                        if (symbolExpression.toString().toLowerCase().search("parameters") > -1) {
+                            popupParameters['data-tchmi-parameters'] = symbolExpression.toString();
+                        }
+                        if (symbolExpression.toString().toLowerCase().search("value") > -1) {
+                            popupParameters['data-tchmi-value'] = symbolExpression.toString();
+                        }
+                    } else {
+                        // Binding exists not
+                    }
                 }
             }
         }
-
+        
         if (Content == undefined) { Content = "" }
         if (HorizontalAlignment == undefined) { HorizontalAlignment = "Top" }
         if (VerticalAlignment == undefined) { VerticalAlignment = "Left" }
@@ -45,7 +65,6 @@
         if (Height == undefined) { Height = 100 }
         if (Width == undefined) { Width = 100 }
         if (WhereToInsert == undefined) { WhereToInsert = "Desktop" }
-
 
         if (HorizontalAlignment == 'Left') {
             popupParameters['data-tchmi-left'] = HorizontalDistance;
@@ -67,6 +86,11 @@
             popupParameters['data-tchmi-bottom'] = VerticalDistance;
         }
 
+        if (AddWhereclicked == true) {
+            popupParameters['data-tchmi-left'] = TcHmiExampleCollection.Utilities.ClickPressCoordinates.x;
+            popupParameters['data-tchmi-top'] = TcHmiExampleCollection.Utilities.ClickPressCoordinates.y;
+
+        }
         popupParameters['data-tchmi-height'] = Height;
         popupParameters['data-tchmi-width'] = Width;
         popupParameters['data-tchmi-zindex'] = "1000";
@@ -85,7 +109,7 @@
             popupParameters['data-tchmi-target-user-control'] = Content;
             popup = TcHmi.ControlFactory.createEx(
             'tchmi-user-control-host',
-            String('PopupInstance'),
+            PopupUuid,
             popupParameters
             );
         }
@@ -93,7 +117,7 @@
             popupParameters['data-tchmi-target-content'] = Content;
             popup = TcHmi.ControlFactory.createEx(
             'tchmi-region',
-            String('PopupInstance' + Content),
+            PopupUuid,
             popupParameters
             );
         }
@@ -104,7 +128,7 @@
 
         if (desktop && popup ) {
             desktop.addChild(popup);
-            TcHmiExampleCollection.Utilities.dragElement(document.getElementById("PopupInstance"));
+            TcHmiExampleCollection.Utilities.dragElement(document.getElementById(PopupUuid));
         }
         return;
     };

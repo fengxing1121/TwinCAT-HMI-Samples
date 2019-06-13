@@ -29,6 +29,36 @@
       "propertyName": "Parameters",
       "propertySetterName": "setParameters",
       "propertyGetterName": "getParameters"
+    },
+    {
+      "name": "data-tchmi-icon",
+      "displayName": "Icon",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Path",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Icon",
+      "propertySetterName": "setIcon",
+      "propertyGetterName": "getIcon"
+    },
+    {
+      "name": "data-tchmi-pointname",
+      "displayName": "PointName",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "PointName",
+      "propertySetterName": "setPointName",
+      "propertyGetterName": "getPointName"
     }
   ],
   "virtualRights": [],

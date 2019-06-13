@@ -3,10 +3,10 @@
     "name": "PopupOpen",
     "displayName": "PopupOpen",
     "visible": true,
-    "category": "ControlPopup",
+    "category": "Popup",
     "waitMode": "Synchronous",
     "injectContextObject": false,
-    "description": "",
+    "description": "Opens a desired popup",
     "returnValue": {
       "type": "tchmi:general#/definitions/String"
     },
@@ -94,6 +94,17 @@
         "type": "tchmi:framework#/definitions/Control",
         "description": "",
         "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "AddWhereclicked",
+        "displayName": "Add Where clicked?",
+        "type": "tchmi:general#/definitions/Boolean",
+        "description": "",
+        "defaultValue": "True",
         "required": true,
         "bindable": true,
         "restParameter": false,
