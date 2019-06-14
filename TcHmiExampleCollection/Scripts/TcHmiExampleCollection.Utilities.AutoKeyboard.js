@@ -1,0 +1,58 @@
+﻿// Keep this lines for a best effort IntelliSense of Visual Studio 2017.
+/// <reference path="C:\TwinCAT\Functions\TE2000-HMI-Engineering\Infrastructure\TcHmiFramework\Latest\Lib\jquery.d.ts" />
+/// <reference path="C:\TwinCAT\Functions\TE2000-HMI-Engineering\Infrastructure\TcHmiFramework\Latest\TcHmi.d.ts" />
+/// <reference path="C:\TwinCAT\Functions\TE2000-HMI-Engineering\Infrastructure\TcHmiFramework\Latest\Controls\System\TcHmiControl\Source.d.ts" />
+
+// Keep this lines for a best effort IntelliSense of Visual Studio 2013/2015.
+/// <reference path="C:\TwinCAT\Functions\TE2000-HMI-Engineering\Infrastructure\TcHmiFramework\Latest\Lib\jquery\jquery.js" />
+/// <reference path="C:\TwinCAT\Functions\TE2000-HMI-Engineering\Infrastructure\TcHmiFramework\Latest\TcHmi.js" />
+
+(function (TcHmi) {
+    // If you want to unregister an event outside the event code you need to use the return value of the method register()
+    var destroyOnInitialized = TcHmi.EventProvider.register('onInitialized', function (e, data) {
+        // This event will be raised only once, so we can free resources. 
+        // It's best practice to use destroy function of the event object within the callback function to avoid conflicts.
+        e.destroy();
+        // ----------------------
+        // Place your code here!
+        // ----------------------
+    });
+})(TcHmi);
+
+if (!TcHmiExampleCollection.Utilities) {
+    console.log("TcHmiExampleCollection.Utilities.js needs to be loaded before.");
+};
+TcHmiExampleCollection.Utilities.AutoKeyboard = {};
+TcHmiExampleCollection.Utilities.AutoKeyboard.AutoHideOnEnter = true;
+TcHmiExampleCollection.Utilities.AutoKeyboard.AutoOpenOnInput = true;
+TcHmiExampleCollection.Utilities.AutoKeyboard.AutoSelectInputContent = true;
+
+
+if (TcHmiExampleCollection.Utilities.AutoKeyboard.AutoHideOnEnter) {
+    // Catches enter press and hides keyboard.
+    $(document).on("keypress", function (e) {
+        /* ENTER PRESSED*/
+        if (e.keyCode == 13) {
+            var Keyboard = TcHmi.Controls.get('TcHmiKeyboard');
+            if (Keyboard !== undefined) {
+                var PopUpFunction = TcHmi.Functions.getFunction("PopupCloseThis");
+                PopUpFunction(Keyboard.__parent);
+            }
+            return false;
+        }
+    });
+}
+
+if (TcHmiExampleCollection.Utilities.AutoKeyboard.AutoOpenOnInput || TcHmiExampleCollection.Utilities.AutoKeyboard.AutoSelectInputContent) {
+    $(document).on("click", function (event) {
+        if (event.target.nodeName == "INPUT") {
+            if (TcHmiExampleCollection.Utilities.AutoKeyboard.AutoOpenOnInput) {
+            var PopUpFunction = TcHmi.Functions.getFunction("PopupOpen");
+            PopUpFunction("Keyboard/Keyboard.content", "Left", "Top", 0, 0, 500, 1000, TcHmi.Controls.get("Desktop"), true);
+            }
+            if (TcHmiExampleCollection.Utilities.AutoKeyboard.AutoSelectInputContent) {
+                event.target.select();
+            }
+        }
+    });
+}

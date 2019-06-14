@@ -19,7 +19,8 @@
     });
 })(TcHmi);
 TcHmiExampleCollection.Utilities = {};
-TcHmiExampleCollection.Utilities.checkImplementation = function () { return (TcHmiExampleCollection) };
+TcHmiExampleCollection.Utilities.checkImplementation = function () { if (TcHmiExampleCollection) { return true } };
+
 if (!TcHmiExampleCollection.Utilities.checkImplementation()) {
     console.log("TcHmiExampleCollection.js needs to be loaded before.");
 };

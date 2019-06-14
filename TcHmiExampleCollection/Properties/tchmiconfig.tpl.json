@@ -37,13 +37,17 @@
   ],
   "userControls": [
     {
-      "url": "Popup/Actuator.usercontrol"
+      "url": "Devices/Actuator/Actuator.usercontrol"
     },
     {
-      "url": "Popup/ActuatorPopup.usercontrol"
+      "url": "Devices/Actuator/ActuatorPopup.usercontrol"
     }
   ],
   "content": [
+    {
+      "url": "Keyboard/Keyboard.content",
+      "preload": false
+    },
     {
       "url": "ProcessChart/ProcessChart.content",
       "preload": false

@@ -116,7 +116,7 @@
         "type": "tchmi:project#/definitions/Symbol_Of_Object",
         "description": "Insert binding values here! (Rest)",
         "defaultValue": "{}",
-        "required": true,
+        "required": false,
         "bindable": true,
         "restParameter": true,
         "asReference": true

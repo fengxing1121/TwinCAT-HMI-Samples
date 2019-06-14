@@ -85,22 +85,25 @@
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
+    <Content Include="Devices\Actuator\Actuator.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Devices\Actuator\Actuator.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Devices\Actuator\ActuatorPopup.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Devices\Actuator\ActuatorPopup.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\Icons\Actuators\blue_sani_valve_30.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\close_normal.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Popup\Actuator.usercontrol">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Popup\Actuator.usercontrol.json">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Popup\ActuatorPopup.usercontrol">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Popup\ActuatorPopup.usercontrol.json">
+    <Content Include="Keyboard\Keyboard.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Popup\PopupCloseThis.function.json">
@@ -131,6 +134,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\TcHmiExampleCollection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\TcHmiExampleCollection.Utilities.AutoKeyboard.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\TcHmiExampleCollection.Utilities.js">
@@ -173,6 +179,7 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include=".hmipkgs" />
+    <Folder Include="Devices\Actuator" />
     <Folder Include="Images\Icons" />
     <Folder Include="Images\Icons\Actuators" />
     <Folder Include="Libraries" />
@@ -182,6 +189,8 @@
     <Folder Include="Imports\Images" />
     <Folder Include="Imports\Videos" />
     <Folder Include="Localization" />
+    <Folder Include="Keyboard" />
+    <Folder Include="Devices" />
     <Folder Include="ProcessChart" />
     <Folder Include="Popup" />
     <Folder Include="Scripts" />

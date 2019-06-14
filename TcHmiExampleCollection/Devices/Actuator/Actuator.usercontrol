@@ -98,4 +98,142 @@
 </script>
 </div>
 
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Actuator.onMouseOver",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Actuator::BackgroundColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "rgba(255, 255, 255, 0.1960784)"
+          }
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Actuator.onMouseOut",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Actuator::BackgroundColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "None"
+          }
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Actuator.onTouchStart",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Actuator::BackgroundColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "rgba(255, 255, 255, 0.1960784)"
+          }
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Actuator.onTouchEnd",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Actuator::BackgroundColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "None"
+          }
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Actuator.onTouchCancel",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Actuator::BackgroundColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "None"
+          }
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Actuator.onMouseLeave",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Actuator::BackgroundColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "None"
+          }
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Actuator.onMouseEnter",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Actuator::BackgroundColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "rgba(255, 255, 255, 0.1960784)"
+          }
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
 </div>

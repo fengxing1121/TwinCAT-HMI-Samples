@@ -17,46 +17,51 @@
         var PopParameterStartIndex;
         var popupParameters = [];
         var PopParameters = [];
+        var popup;
+        var popupType = Content.split(".");
+        popupType = popupType[popupType.length - 1].toLowerCase();
 
-        for (var i = 0; i < this.__fnDescr.function.arguments.length; i++) {
-            if (this.__fnDescr.function.arguments[i].name == "PopParameters") {
-                PopParameterStartIndex = i;
-                break;
+        if (popupType == "usercontrol") {
+            for (var i = 0; i < this.__fnDescr.function.arguments.length; i++) {
+                if (this.__fnDescr.function.arguments[i].name == "PopParameters") {
+                    PopParameterStartIndex = i;
+                    break;
+                }
             }
-        }
-        for (var a = PopParameterStartIndex; a < this.__f.fnParams.length; a++) {
-            PopParameters[PopParameters.length] = this.__f.fnParams[a];
-        }
-        for (var b = 0; b < PopParameters.length; b++) {
-            if (PopParameters[b].symbolExpression.search("%pp%") > -1) {
-                var originControl = TcHmi.Controls.get(PopParameters[b].symbolExpression.replace("%pp%", "").replace("%/pp%", "").split(".")[0]);
-                if (originControl) {
-                    var symbolExpression = TcHmi.Binding.resolveEx('Parameters', originControl);
-                    if (symbolExpression) {
-                        if (symbolExpression.toString().toLowerCase().search("parameters")>-1) {
-                            popupParameters['data-tchmi-parameters'] = symbolExpression.toString();
+            for (var a = PopParameterStartIndex; a < this.__f.fnParams.length; a++) {
+                PopParameters[PopParameters.length] = this.__f.fnParams[a];
+            }
+            for (var b = 0; b < PopParameters.length; b++) {
+                if (PopParameters[b].symbolExpression.search("%pp%") > -1) {
+                    var originControl = TcHmi.Controls.get(PopParameters[b].symbolExpression.replace("%pp%", "").replace("%/pp%", "").split(".")[0]);
+                    if (originControl) {
+                        var symbolExpression = TcHmi.Binding.resolveEx('Parameters', originControl);
+                        if (symbolExpression) {
+                            if (symbolExpression.toString().toLowerCase().search("parameters")>-1) {
+                                popupParameters['data-tchmi-parameters'] = symbolExpression.toString();
+                            }
+                            if (symbolExpression.toString().toLowerCase().search("value")>-1) {
+                                popupParameters['data-tchmi-value'] = symbolExpression.toString();
+                            }
+                        } else {
+                            // Binding exists not
                         }
-                        if (symbolExpression.toString().toLowerCase().search("value")>-1) {
-                            popupParameters['data-tchmi-value'] = symbolExpression.toString();
+                        var symbolExpression = TcHmi.Binding.resolveEx('Value', originControl);
+                        if (symbolExpression) {
+                            if (symbolExpression.toString().toLowerCase().search("parameters") > -1) {
+                                popupParameters['data-tchmi-parameters'] = symbolExpression.toString();
+                            }
+                            if (symbolExpression.toString().toLowerCase().search("value") > -1) {
+                                popupParameters['data-tchmi-value'] = symbolExpression.toString();
+                            }
+                        } else {
+                            // Binding exists not
                         }
-                    } else {
-                        // Binding exists not
-                    }
-                    var symbolExpression = TcHmi.Binding.resolveEx('Value', originControl);
-                    if (symbolExpression) {
-                        if (symbolExpression.toString().toLowerCase().search("parameters") > -1) {
-                            popupParameters['data-tchmi-parameters'] = symbolExpression.toString();
-                        }
-                        if (symbolExpression.toString().toLowerCase().search("value") > -1) {
-                            popupParameters['data-tchmi-value'] = symbolExpression.toString();
-                        }
-                    } else {
-                        // Binding exists not
                     }
                 }
             }
         }
-        
+
         if (Content == undefined) { Content = "" }
         if (HorizontalAlignment == undefined) { HorizontalAlignment = "Top" }
         if (VerticalAlignment == undefined) { VerticalAlignment = "Left" }
@@ -102,9 +107,6 @@
         //    TcHmi.Controls.get('ManualControlPopupInstance').destroy();
         //}
 
-        var popup;
-        var popupType = Content.split(".");
-        popupType = popupType[popupType.length-1].toLowerCase();
         if (popupType == "usercontrol") {
             popupParameters['data-tchmi-target-user-control'] = Content;
             popup = TcHmi.ControlFactory.createEx(
