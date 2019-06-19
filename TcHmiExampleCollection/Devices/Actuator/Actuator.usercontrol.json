@@ -59,6 +59,23 @@
       "propertyName": "PointName",
       "propertySetterName": "setPointName",
       "propertyGetterName": "getPointName"
+    },
+    {
+      "name": "data-tchmi-actuatortype",
+      "displayName": "ActuatorType",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Integer",
+      "category": "",
+      "description": "0:Unknown; 1:Valve",
+      "defaultValue": 0,
+      "defaultValueInternal": 0,
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "ActuatorType",
+      "propertySetterName": "setActuatorType",
+      "propertyGetterName": "getActuatorType"
     }
   ],
   "virtualRights": [],

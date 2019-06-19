@@ -13,7 +13,7 @@
         if (TcHmi.Controls.get(String('PopupInstance'+Content)) || Content == null) {
             return;
         }
-        var PopupUuid = String(TcHmiExampleCollection.Utilities.generateUuidv4());
+        var PopupUuid = String("Popup_" + TcHmiExampleCollection.Utilities.generateUuidv4());
         var PopParameterStartIndex;
         var popupParameters = [];
         var PopParameters = [];

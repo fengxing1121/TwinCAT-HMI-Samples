@@ -1,6 +1,8 @@
 ﻿<div id="ProcessChart" data-tchmi-type="tchmi-content" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="800" data-tchmi-height="640" data-tchmi-min-width="100" data-tchmi-min-width-unit="%" data-tchmi-min-height="100" data-tchmi-min-height-unit="%">
 
-<div id="Actuator_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="95" data-tchmi-left-unit="px" data-tchmi-target-user-control="Devices/Actuator/Actuator.usercontrol" data-tchmi-top="33" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value="%s%PLC1.MAIN.fbValve.Value%/s%" data-tchmi-parameters="%s%PLC1.MAIN.fbValve.Parameters%/s%" data-tchmi-icon="Images/Icons/Actuators/blue_sani_valve_30.svg" data-tchmi-pointname="PT 111">
+<div id="Actuator_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="95" data-tchmi-left-unit="px" data-tchmi-target-user-control="Devices/Actuator/Actuator.usercontrol" data-tchmi-top="33" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value="%s%PLC1.MAIN.fbValve.Value%/s%" data-tchmi-parameters="%s%PLC1.MAIN.fbValve.Parameters%/s%" data-tchmi-icon="Images/Icons/Actuators/blue_sani_valve_30.svg" data-tchmi-pointname="PT 111" data-tchmi-actuatortype="1">
+
+
 
 </div>
 
@@ -13,6 +15,12 @@
   "left": 3
 }
 </script>
+
+</div>
+
+<div id="Actuator_2" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="261" data-tchmi-left-unit="px" data-tchmi-target-user-control="Devices/Actuator/Actuator.usercontrol" data-tchmi-top="89" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value="%s%PLC1.MAIN.fbMotor.Value%/s%" data-tchmi-parameters="%s%PLC1.MAIN.fbMotor.Parameters%/s%" data-tchmi-icon="Images/Icons/Actuators/blue_vent_ventilation.svg" data-tchmi-pointname="M 1" data-tchmi-actuatortype="2">
+
+
 
 </div>
 

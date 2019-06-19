@@ -9,13 +9,12 @@
 
 (function (TcHmi) {
 
-    var DegreesToRotation = function (Degrees) {
-        return [{
-              "transformType": "Rotate",
-              "angle": Degrees,
-              "angleUnit": "deg"
-        }]
+    var ValueToColorFadeWithMotorEnable = function (Value, StartColor, EndColor, StartValueScale, EndValueScale, ActuatorType) {
+        if (ActuatorType == 2) {
+            ValueToColorFade = TcHmi.Functions.getFunction("ValueToColorFade");
+            return ValueToColorFade(Value, StartColor, EndColor, StartValueScale, EndValueScale);
+        }
     };
     
-    TcHmi.Functions.registerFunction('DegreesToRotation', DegreesToRotation);
+    TcHmi.Functions.registerFunction('ValueToColorFadeWithMotorEnable', ValueToColorFadeWithMotorEnable);
 })(TcHmi);

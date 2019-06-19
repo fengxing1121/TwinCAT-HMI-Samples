@@ -25,6 +25,26 @@
     "DEFAULTTIMEZONE": "client",
     "DEFAULTUSERGROUP": "__SystemUsers",
     "DEFINITIONS": {
+        "PLC1.ST_MotorParam": {
+            "properties": {
+                "D": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "I": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "P": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "Set": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "Unit": {
+                    "$ref": "tchmi:general#/definitions/STRING(80)"
+                }
+            },
+            "type": "object"
+        },
         "PLC1.ST_ValveParam": {
             "properties": {
                 "D": {
@@ -38,6 +58,9 @@
                 },
                 "Set": {
                     "$ref": "tchmi:general#/definitions/INT"
+                },
+                "Unit": {
+                    "$ref": "tchmi:general#/definitions/STRING(80)"
                 }
             },
             "type": "object"
@@ -1729,6 +1752,26 @@
                 "writeValue": {
                     "type": "string"
                 }
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.fbMotor.Parameters": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::fbMotor::Parameters",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ST_MotorParam"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.fbMotor.Value": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::fbMotor::Value",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/LREAL"
             },
             "USEMAPPING": true
         },

@@ -6,7 +6,7 @@
   "startupView": "Desktop.view",
   "loginPage": null,
   "tcHmiServer": {
-    "websocketIntervalTime": 500,
+    "websocketIntervalTime": 200,
     "websocketTimeout": 5000,
     "websocketSubscriptionMode": "Change"
   },
@@ -90,6 +90,15 @@
     },
     {
       "url": "Scripts/WriteToSymbolProperty.js"
+    },
+    {
+      "url": "Scripts/DegreesToRotationWithValveEnable.js"
+    },
+    {
+      "url": "Scripts/ValueToColorFade.js"
+    },
+    {
+      "url": "Scripts/ValueToColorFadeWithMotorEnable.js"
     }
   ],
   "symbols": {

@@ -9,13 +9,22 @@
 
 (function (TcHmi) {
 
-    var DegreesToRotation = function (Degrees) {
-        return [{
+    var DegreesToRotationWithValveEnable = function (Degrees,ValveEnable) {
+        if (ValveEnable==1) {
+            return [{
               "transformType": "Rotate",
               "angle": Degrees,
               "angleUnit": "deg"
-        }]
+            }]
+        }
+        else {
+            return [{
+                "transformType": "Rotate",
+                "angle": 0,
+                "angleUnit": "deg"
+            }]
+        }
     };
     
-    TcHmi.Functions.registerFunction('DegreesToRotation', DegreesToRotation);
+    TcHmi.Functions.registerFunction('DegreesToRotationWithValveEnable', DegreesToRotationWithValveEnable);
 })(TcHmi);

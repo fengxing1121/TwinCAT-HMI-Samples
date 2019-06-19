@@ -8,14 +8,15 @@
 /// <reference path="C:\TwinCAT\Functions\TE2000-HMI-Engineering\Infrastructure\TcHmiFramework\Latest\TcHmi.js" />
 
 (function (TcHmi) {
-
-    var DegreesToRotation = function (Degrees) {
-        return [{
-              "transformType": "Rotate",
-              "angle": Degrees,
-              "angleUnit": "deg"
-        }]
-    };
-    
-    TcHmi.Functions.registerFunction('DegreesToRotation', DegreesToRotation);
+    if (TCHMI_ENABLE_DESIGNER_MODE !== true) {
+        if (document.addEventListener) {
+            document.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            }, false);
+        } else {
+            document.attachEvent('oncontextmenu', function () {
+                window.event.returnValue = false;
+            });
+        }
+    }
 })(TcHmi);

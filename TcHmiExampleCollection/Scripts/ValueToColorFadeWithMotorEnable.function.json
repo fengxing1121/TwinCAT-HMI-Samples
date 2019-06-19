@@ -1,0 +1,83 @@
+﻿{
+  "function": {
+    "name": "ValueToColorFadeWithMotorEnable",
+    "displayName": "ValueToColorFadeWithMotorEnable",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:framework#/definitions/SolidColor"
+    },
+    "arguments": [
+      {
+        "name": "Value",
+        "displayName": "Value",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "StartColor",
+        "displayName": "StartColor",
+        "type": "tchmi:framework#/definitions/SolidColor",
+        "description": "",
+        "defaultValue": "{\r\n  \"color\": \"rgba(0, 0, 0, 1)\"\r\n}",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "EndColor",
+        "displayName": "EndColor",
+        "type": "tchmi:framework#/definitions/SolidColor",
+        "description": "",
+        "defaultValue": "{\r\n  \"color\": \"rgba(255, 255, 255, 1)\"\r\n}",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "StartValueScale",
+        "displayName": "StartValueScale",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "EndValueScale",
+        "displayName": "EndValueScale",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "",
+        "defaultValue": "1",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "ActuatorType",
+        "displayName": "ActuatorType",
+        "type": "tchmi:general#/definitions/Integer",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

@@ -11,12 +11,12 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiExampleCollection</Name>
-    <HmiCommunicationRouterPort>10102</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10103</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.203</HmiInitial>
     <HmiRecent>1.10.1336.203</HmiRecent>
-    <CodeBehindOrder>Scripts\TcHmiExampleCollection.js,Trend\TcHmiExampleCollection.Trendline.js,Scripts\TcHmiExampleCollection.Utilities.js,Trend\AddToTrendChart.js,Trend\AddToTrendChartFromUC.js,Trend\GetHistorizedToComboBox.js,Trend\RemoveFromTrendChart.js,Popup\PopupCloseThis.js,Popup\PopupOpen.js,Scripts\DecimalFormatter.js,Scripts\DegreesToRotation.js</CodeBehindOrder>
+    <CodeBehindOrder>Scripts\TcHmiExampleCollection.js,Trend\TcHmiExampleCollection.Trendline.js,Scripts\TcHmiExampleCollection.Utilities.js,Scripts\TcHmiExampleCollection.Utilities.AutoKeyboard.js,Trend\AddToTrendChart.js,Trend\AddToTrendChartFromUC.js,Trend\GetHistorizedToComboBox.js,Trend\RemoveFromTrendChart.js,Popup\PopupCloseThis.js,Popup\PopupOpen.js,Scripts\DecimalFormatter.js,Scripts\DegreesToRotation.js,Scripts\CheckResolution.js,Scripts\DegreesToRotationWithValveEnable.js,Scripts\DisableContextMenu.js,Scripts\ReadUrlParameter.js,Scripts\ValueToColorFade.js,Scripts\ValueToColorFadeWithMotorEnable.js,Scripts\WriteToSymbolProperty.js</CodeBehindOrder>
     <CodeBehindGlobalCssOrder>Fonts\Fonts.css</CodeBehindGlobalCssOrder>
   </PropertyGroup>
   <PropertyGroup>
@@ -100,6 +100,9 @@
     <Content Include="Images\Icons\Actuators\blue_sani_valve_30.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Images\Icons\Actuators\blue_vent_ventilation.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\close_normal.svg">
       <SubType>Content</SubType>
     </Content>
@@ -121,6 +124,27 @@
     <Content Include="ProcessChart\ProcessChart.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Scripts\CheckResolution.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\DisableContextMenu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\ReadUrlParameter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\ValueToColorFadeWithMotorEnable.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\ValueToColorFadeWithMotorEnable.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\DegreesToRotationWithValveEnable.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\DegreesToRotationWithValveEnable.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Scripts\DecimalFormatter.function.json">
       <SubType>Content</SubType>
     </Content>
@@ -140,6 +164,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\TcHmiExampleCollection.Utilities.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\ValueToColorFade.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\ValueToColorFade.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\WriteToSymbolProperty.function.json">

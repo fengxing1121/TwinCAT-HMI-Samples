@@ -25,6 +25,7 @@ if (!TcHmiExampleCollection.Utilities.checkImplementation()) {
     console.log("TcHmiExampleCollection.js needs to be loaded before.");
 };
 
+// Make elements draggable
 TcHmiExampleCollection.Utilities.dragElement = function (elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     if (document.getElementById(elmnt.id + ".header")) {
@@ -66,6 +67,7 @@ TcHmiExampleCollection.Utilities.dragElement = function (elmnt) {
     }
 }
 
+// String utility functions
 String.prototype.endsWith = function () {
     if ((this.lastIndexOf(arguments[0]) > -1) && (this.lastIndexOf(arguments[0])) == (this.length - arguments[0].length))
         return true;
@@ -87,6 +89,7 @@ String.prototype.contains = function () {
         return false;
 };
 
+// Switch view by name
 TcHmiExampleCollection.Utilities.switchView = function (_name, _callback) {
     var v1 = TcHmi.View.get();
     TcHmi.Log.debug(v1.getId());
@@ -98,19 +101,28 @@ TcHmiExampleCollection.Utilities.switchView = function (_name, _callback) {
     });
 };
 
+// Mouse press coordinates
 TcHmiExampleCollection.Utilities.ClickPressCoordinates = {
     x: null,
     y: null
 };
 
+// Get mouse press coordinates
 TcHmiExampleCollection.Utilities.getClickPressCoordinates = function (event) {
     TcHmiExampleCollection.Utilities.ClickPressCoordinates.x = event.clientX;
     TcHmiExampleCollection.Utilities.ClickPressCoordinates.y = event.clientY;
 }
 
+// Uuidv4 generator
 TcHmiExampleCollection.Utilities.generateUuidv4 = function () {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
         var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
         return v.toString(16);
     });
+}
+
+// Scale values between two points
+TcHmiExampleCollection.Utilities.TwoPointScaling = function (Value, xMin, xMax, yMin, yMax) {
+    ratio = (Value - xMin) / (xMax - xMin);
+    return ratio * (yMax - yMin) + yMin;
 }

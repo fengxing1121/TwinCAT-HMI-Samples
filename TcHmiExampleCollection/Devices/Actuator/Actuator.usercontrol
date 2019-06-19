@@ -3,7 +3,7 @@
      data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
      data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
 
-<div id="ActuatorIcon" data-tchmi-type="tchmi-image" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-src="%pp%Icon%/pp%" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5">
+<div id="ActuatorIcon" data-tchmi-type="tchmi-image" data-tchmi-height-unit="px" data-tchmi-left="28" data-tchmi-left-unit="px" data-tchmi-src="%pp%Icon%/pp%" data-tchmi-top="28" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="28" data-tchmi-bottom="28" data-tchmi-transform="%f%DegreesToRotationWithValveEnable(%pp%Value%/pp%, %pp%ActuatorType%/pp%)%/f%" data-tchmi-background-color="%f%ValueToColorFadeWithMotorEnable(%pp%Value%/pp%,'{&quot;color&quot;: &quot;rgba(0,0,0,0)&quot;}' , '{&quot;color&quot;: &quot;rgba(255,0,0,0.5)&quot;}', 0, 100,%pp%ActuatorType%/pp%)%/f%">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -19,7 +19,7 @@
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:framework#/definitions/Path",
-            "value": "Popup/ActuatorPopup.usercontrol"
+            "value": "Devices/Actuator/ActuatorPopup.usercontrol"
           },
           {
             "objectType": "StaticValue",
@@ -76,9 +76,28 @@
   }
 ]
 </script>
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 50.0,
+  "topRight": 50.0,
+  "bottomLeft": 50.0,
+  "bottomRight": 50.0,
+  "topLeftUnit": "%",
+  "topRightUnit": "%",
+  "bottomLeftUnit": "%",
+  "bottomRightUnit": "%"
+}
+</script>
+
+
 </div>
 
-<div id="TcHmiTextblock" data-tchmi-type="tchmi-textblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="%f%DecimalFormatter(%pp%Value%/pp%,0)+'°'%/f%" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold">
+<div id="TcHmiTextblock" data-tchmi-type="tchmi-textblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="%f%DecimalFormatter(%pp%Value%/pp%,0)+&quot; &quot;+%pp%Parameters%/pp%.Unit%/f%" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold">
 
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">

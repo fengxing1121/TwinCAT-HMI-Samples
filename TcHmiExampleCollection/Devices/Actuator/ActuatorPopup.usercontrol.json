@@ -16,6 +16,21 @@
       "propertyGetterName": "getValue"
     },
     {
+      "name": "data-tchmi-pointname",
+      "displayName": "PointName",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "PointName",
+      "propertySetterName": "setPointName",
+      "propertyGetterName": "getPointName"
+    },
+    {
       "name": "data-tchmi-parameters",
       "displayName": "Parameters",
       "visible": true,
