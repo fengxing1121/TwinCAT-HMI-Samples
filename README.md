@@ -15,10 +15,12 @@ Selection of different kind of (process) device templates
 
 #### Actuator
 - Actuator.usercontrol : Simple actuator template with icon, value and parameter popup
+  - Configurable device type. Custom actions for valve and motor/fan 
 - ActuatorPopup.usercontrol : Simple actuator popup template with parameters
 
 ### Popup
 - PopupOpen.js : Framework Function to open popups
+  - Issue: Does not show yet the device name.
 - PopupCloseThis.js : Framework Function to close popups
 
 ### Trend
@@ -31,12 +33,19 @@ Selection of different kind of (process) device templates
 
 ### Scripts
 General collection of useful stuff
-DecimalFormatter.js : Framework Function to format decimals of numbers
-DegreesToRotation.js : Framework Function to turn numbers to transform-list
-WriteToSymbolProperty.js : Framework Function to write value to (struct) symbols property
-TcHmiExampleCollection.Utilities.js : 
-- dragElement : Make element draggable
-- String prototypes : Useful string functions
-- switchView : Swicht view
-- getClickPressCoordinates : Get coordinates where user clicked
-- generateUuidv4 : Generate Uuids
+- DecimalFormatter.js : Framework Function to format decimals of numbers
+- DegreesToRotation.js : Framework Function to turn numbers to transform-list
+- WriteToSymbolProperty.js : Framework Function to write value to (struct) symbols property
+- TcHmiExampleCollection.Utilities.js : 
+  - dragElement : Make element draggable
+  - String prototypes : Useful string functions
+  - switchView : Swicht view
+  - getClickPressCoordinates : Get coordinates where user clicked
+  - generateUuidv4 : Generate Uuids
+  - TwoPointScaling : Calculate scaling for value between yMin, yMax, xMin, xMax
+- DegreesToRotation.js : Generates rotating translation for a element from degree value input
+  - DegreesToRotationWithValveEnable.js : Special use of this for Actuator.usercontrol
+- DisableContextMenu.js : Disable (right click) context menu in a published project
+- ReadUrlParameter.js : Read GET-parameters from URL for e.g. changing View
+- ValueToColorFade.js : Generate fading color from value and color endpoints
+  - ValueToColorFadeWithMotorEnable.js : Special use of this for Actuator.usercontrol
