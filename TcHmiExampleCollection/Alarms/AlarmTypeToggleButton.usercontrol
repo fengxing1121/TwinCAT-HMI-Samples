@@ -1,0 +1,31 @@
+﻿<div id="AlarmTypeToggleButton" data-tchmi-type="tchmi-user-control" 
+     data-tchmi-top="0" data-tchmi-left="0" 
+     data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
+     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
+
+<div id="TcHmiAlarmTypeToggleButton_1" data-tchmi-type="tchmi-toggle-button" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="%pp%Text%/pp%" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-toggle-group="AlarmTypeToggle" data-tchmi-text-font-size="16">
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiAlarmTypeToggleButton_1.onStatePressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%EventGrid::Filter%/pp%",
+        "valueType": "tchmi:server#/definitions/eventFilter",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%EventFilter%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+
+</div>

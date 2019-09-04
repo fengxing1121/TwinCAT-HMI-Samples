@@ -1,0 +1,28 @@
+﻿{
+  "function": {
+    "name": "BooleanToVisibility",
+    "displayName": "BooleanToVisibility",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:framework#/definitions/Visibility"
+    },
+    "arguments": [
+      {
+        "name": "Input",
+        "displayName": "Input",
+        "type": "tchmi:general#/definitions/Boolean",
+        "description": "",
+        "defaultValue": "False",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

@@ -30,9 +30,9 @@ TcHmiExampleCollection.Utilities.AutoKeyboard.AutoSelectInputContent = true;
 
 if (TcHmiExampleCollection.Utilities.AutoKeyboard.AutoHideOnEnter) {
     // Catches enter press and hides keyboard.
-    $(document).on("keypress", function (e) {
+    $(document).keydown( function (e) {
         /* ENTER PRESSED*/
-        if (e.keyCode == 13) {
+        if (e.keyCode == 13 || e.keyCode == 27) {
             var Keyboard = TcHmi.Controls.get('TcHmiKeyboard');
             if (Keyboard !== undefined) {
                 var PopUpFunction = TcHmi.Functions.getFunction("PopupCloseThis");

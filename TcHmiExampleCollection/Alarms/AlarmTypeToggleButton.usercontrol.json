@@ -1,0 +1,59 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-eventfilter",
+      "displayName": "EventFilter",
+      "visible": true,
+      "type": "tchmi:server#/definitions/eventFilter",
+      "category": "",
+      "description": "",
+      "defaultValue": [
+        {
+          "path": "sourceDomain",
+          "comparator": "==",
+          "value": "TcHmiEventLogger"
+        }
+      ],
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "EventFilter",
+      "propertySetterName": "setEventFilter",
+      "propertyGetterName": "getEventFilter"
+    },
+    {
+      "name": "data-tchmi-text",
+      "displayName": "Text",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Text",
+      "propertySetterName": "setText",
+      "propertyGetterName": "getText"
+    },
+    {
+      "name": "data-tchmi-eventgrid",
+      "displayName": "EventGrid",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/TcHmiEventGrid",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "EventGrid",
+      "propertySetterName": "setEventGrid",
+      "propertyGetterName": "getEventGrid"
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

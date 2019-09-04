@@ -1,0 +1,8 @@
+﻿{
+  "locale": "fi-FI",
+  "localizedText": {
+    "Text1": "Hei maailma!",
+    "Text2": "Olen paikallistettu teksti."
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/LocalizationDescription.Schema.json"
+}

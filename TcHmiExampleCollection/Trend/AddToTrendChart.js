@@ -14,7 +14,7 @@
             console.log("TcHmiExampleCollection.js and TcHmiExampleCollection.Trendline.js need to be loaded before.");
             return;
         };
-
+        VariableToAdd = VariableToAdd.replace("%s%", "").replace("%/s%", "");
         if (TcHmiExampleCollection.Trendline.checkVariale(VariableToAdd)) {
             var XaxisList = TcHmiExampleCollection.Trendline.XAxisList;
             var YaxisList = TcHmiExampleCollection.Trendline.YAxisList;

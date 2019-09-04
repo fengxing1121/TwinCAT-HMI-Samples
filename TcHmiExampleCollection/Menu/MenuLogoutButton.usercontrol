@@ -1,0 +1,145 @@
+﻿<div id="MenuLogoutButton" data-tchmi-type="tchmi-user-control" 
+     data-tchmi-top="0" data-tchmi-left="0" 
+     data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
+     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
+
+<div id="MenuButtonIcon_1" data-tchmi-type="tchmi-image" data-tchmi-height="80" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px"  data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-src="%pp%PassiveIcon%/pp%">
+
+
+
+</div>
+
+<div id="MenuButtonText_1" data-tchmi-type="tchmi-textblock" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%pp%ButtonText%/pp%" data-tchmi-top="80" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="16">
+
+</div>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "MenuLogoutButton.onMouseDown",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon_1::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%PressedIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuLogoutButton.onMouseUp",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon_1::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%HoverIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuLogoutButton.onMouseLeave",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon_1::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%PassiveIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuLogoutButton.onMouseEnter",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon_1::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%HoverIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuLogoutButton.onTouchStart",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon_1::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%PressedIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuLogoutButton.onTouchEnd",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon_1::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%PassiveIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuLogoutButton.onTouchCancel",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon_1::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%PassiveIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuLogoutButton.onPressed",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "Logout",
+        "fnParams": [],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>

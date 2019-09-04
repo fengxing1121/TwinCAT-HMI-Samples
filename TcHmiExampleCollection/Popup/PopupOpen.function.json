@@ -23,6 +23,17 @@
         "asReference": false
       },
       {
+        "name": "Header",
+        "displayName": "Header",
+        "type": "tchmi:general#/definitions/String",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
         "name": "HorizontalAlignment",
         "displayName": "HorizontalAlignment",
         "type": "tchmi:framework#/definitions/HorizontalAlignment",

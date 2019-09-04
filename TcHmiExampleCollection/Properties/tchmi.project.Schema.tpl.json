@@ -13,13 +13,13 @@
         }
       ]
     },
-    "Devices_Actuator_ActuatorPopup": {
+    "Alarms_AlarmTypeToggleButton": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "Devices\\Actuator\\ActuatorPopup.usercontrol.json",
+      "frameworkUserControlConfig": "Alarms\\AlarmTypeToggleButton.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/Devices_Actuator_ActuatorPopup"
+      "id": "tchmi:project#/definitions/Alarms_AlarmTypeToggleButton"
     },
     "Devices_Actuator_Actuator": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
@@ -28,6 +28,30 @@
       "frameworkUserControlConfig": "Devices\\Actuator\\Actuator.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/Devices_Actuator_Actuator"
+    },
+    "Devices_Actuator_ActuatorPopup": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "Devices\\Actuator\\ActuatorPopup.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Devices_Actuator_ActuatorPopup"
+    },
+    "Menu_MenuButton": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "Menu\\MenuButton.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Menu_MenuButton"
+    },
+    "Menu_MenuLogoutButton": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "Menu\\MenuLogoutButton.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Menu_MenuLogoutButton"
     }
   }
 }

@@ -1,0 +1,288 @@
+﻿<div id="MenuButton" data-tchmi-type="tchmi-user-control" 
+     data-tchmi-top="0" data-tchmi-left="0" 
+     data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
+     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
+
+<div id="MenuButtonIcon" data-tchmi-type="tchmi-image" data-tchmi-height="80" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px"  data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-src="%pp%PassiveIcon%/pp%">
+
+
+
+</div>
+
+<div id="MenuButtonText" data-tchmi-type="tchmi-textblock" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%pp%ButtonText%/pp%" data-tchmi-top="80" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="16">
+
+</div>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "MenuButton.onMouseDown",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%PressedIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuButton.onMouseUp",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%HoverIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuButton.onMouseLeave",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%TargetRegion::TargetContent%/pp%"
+            },
+            "compare2": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%TargetContent%/pp%"
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%SelectedIcon%/pp%"
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%PassiveIcon%/pp%"
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuButton.onMouseEnter",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%HoverIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuButton.onTouchStart",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Path",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%PressedIcon%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuButton.onTouchEnd",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%TargetRegion::TargetContent%/pp%"
+            },
+            "compare2": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%TargetContent%/pp%"
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%SelectedIcon%/pp%"
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%PassiveIcon%/pp%"
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuButton.onTouchCancel",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%TargetRegion::TargetContent%/pp%"
+            },
+            "compare2": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%TargetContent%/pp%"
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%SelectedIcon%/pp%"
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%PassiveIcon%/pp%"
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "MenuButton.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%TargetRegion::TargetContent%/pp%",
+        "valueType": "tchmi:framework#/definitions/ContentPath",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%pp%TargetContent%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%TargetRegion::TargetContent%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%TargetRegion::TargetContent%/pp%"
+            },
+            "compare2": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%TargetContent%/pp%"
+            },
+            "compareOperator": "!=",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%MenuButtonIcon::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%PassiveIcon%/pp%"
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>

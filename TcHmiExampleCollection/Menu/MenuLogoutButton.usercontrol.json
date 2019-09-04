@@ -1,0 +1,82 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-buttontext",
+      "displayName": "ButtonText",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "ButtonText",
+      "propertySetterName": "setButtonText",
+      "propertyGetterName": "getButtonText"
+    },
+    {
+      "name": "data-tchmi-passiveicon",
+      "displayName": "PassiveIcon",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Path",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "PassiveIcon",
+      "propertySetterName": "setPassiveIcon",
+      "propertyGetterName": "getPassiveIcon"
+    },
+    {
+      "name": "data-tchmi-hovericon",
+      "displayName": "HoverIcon",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Path",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "HoverIcon",
+      "propertySetterName": "setHoverIcon",
+      "propertyGetterName": "getHoverIcon"
+    },
+    {
+      "name": "data-tchmi-selectedicon",
+      "displayName": "SelectedIcon",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Path",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "SelectedIcon",
+      "propertySetterName": "setSelectedIcon",
+      "propertyGetterName": "getSelectedIcon"
+    },
+    {
+      "name": "data-tchmi-pressedicon",
+      "displayName": "PressedIcon",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Path",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "PressedIcon",
+      "propertySetterName": "setPressedIcon",
+      "propertyGetterName": "getPressedIcon"
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

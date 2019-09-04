@@ -1,6 +1,21 @@
 ﻿{
   "parameters": [
     {
+      "name": "data-tchmi-header",
+      "displayName": "Header",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Header",
+      "propertySetterName": "setHeader",
+      "propertyGetterName": "getHeader"
+    },
+    {
       "name": "data-tchmi-value",
       "displayName": "Value",
       "visible": true,
@@ -14,21 +29,6 @@
       "propertyName": "Value",
       "propertySetterName": "setValue",
       "propertyGetterName": "getValue"
-    },
-    {
-      "name": "data-tchmi-pointname",
-      "displayName": "PointName",
-      "visible": true,
-      "type": "tchmi:general#/definitions/String",
-      "category": "",
-      "description": "",
-      "requiredOnCompile": false,
-      "readOnly": false,
-      "bindable": true,
-      "heritable": true,
-      "propertyName": "PointName",
-      "propertySetterName": "setPointName",
-      "propertyGetterName": "getPointName"
     },
     {
       "name": "data-tchmi-parameters",
@@ -46,6 +46,21 @@
       "propertyName": "Parameters",
       "propertySetterName": "setParameters",
       "propertyGetterName": "getParameters"
+    },
+    {
+      "name": "data-tchmi-trendsymbol",
+      "displayName": "TrendSymbol",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Symbol",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "TrendSymbol",
+      "propertySetterName": "setTrendSymbol",
+      "propertyGetterName": "getTrendSymbol"
     }
   ],
   "virtualRights": [],

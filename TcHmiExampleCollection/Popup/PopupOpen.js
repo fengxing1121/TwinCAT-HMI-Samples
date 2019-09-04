@@ -9,7 +9,7 @@
 
 (function (TcHmi) {
 
-    var PopupOpen = function (Content,HorizontalAlignment,VerticalAlignment,HorizontalDistance,VerticalDistance,Height,Width,WhereToInsert,AddWhereclicked) {
+    var PopupOpen = function (Content,Header,HorizontalAlignment,VerticalAlignment,HorizontalDistance,VerticalDistance,Height,Width,WhereToInsert,AddWhereclicked) {
         if (TcHmi.Controls.get(String('PopupInstance'+Content)) || Content == null) {
             return;
         }
@@ -99,6 +99,7 @@
         popupParameters['data-tchmi-height'] = Height;
         popupParameters['data-tchmi-width'] = Width;
         popupParameters['data-tchmi-zindex'] = "1000";
+        popupParameters['data-tchmi-header'] = Header;
 
         var documentSizeX = document.body.clientWidth;
         var documentSizeY = document.body.clientHeight;

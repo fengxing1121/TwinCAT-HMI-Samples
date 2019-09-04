@@ -37,13 +37,26 @@
   ],
   "userControls": [
     {
+      "url": "Alarms/AlarmTypeToggleButton.usercontrol"
+    },
+    {
       "url": "Devices/Actuator/Actuator.usercontrol"
     },
     {
       "url": "Devices/Actuator/ActuatorPopup.usercontrol"
+    },
+    {
+      "url": "Menu/MenuButton.usercontrol"
+    },
+    {
+      "url": "Menu/MenuLogoutButton.usercontrol"
     }
   ],
   "content": [
+    {
+      "url": "Alarms/Alarms.content",
+      "preload": false
+    },
     {
       "url": "Keyboard/Keyboard.content",
       "preload": false
@@ -99,16 +112,30 @@
     },
     {
       "url": "Scripts/ValueToColorFadeWithMotorEnable.js"
+    },
+    {
+      "url": "Scripts/ResolveSymbol.js"
+    },
+    {
+      "url": "Scripts/BooleanToVisibility.js"
     }
   ],
   "symbols": {
-    "internal": {}
+    "internal": {
+      "TestiStringi": {
+        "value": "",
+        "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      }
+    }
   },
   "trigger": [],
   "actionTemplates": [],
   "languages": {
     "de-DE": "Localization\\de-DE.localization",
-    "en-US": "Localization\\en-US.localization"
+    "en-US": "Localization\\en-US.localization",
+    "fi-FI": "Localization\\fi-FI.localization"
   },
   "creatorSettings": {
     "viewport": {

@@ -23,6 +23,11 @@
           },
           {
             "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/String",
+            "value": "%pp%PointName%/pp%"
+          },
+          {
+            "objectType": "StaticValue",
             "valueType": "tchmi:framework#/definitions/HorizontalAlignment",
             "value": "Left"
           },

@@ -1,0 +1,259 @@
+﻿<div id="Alarms" data-tchmi-type="tchmi-content" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-min-width="100" data-tchmi-min-width-unit="%" data-tchmi-min-height="100" data-tchmi-min-height-unit="%">
+
+<div id="AlarmsGrid" data-tchmi-type="tchmi-grid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-min-width="100" data-tchmi-min-width-unit="%" data-tchmi-min-height="100" data-tchmi-min-height-unit="%">
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": 100.0,
+    "maxHeightUnit": "px",
+    "minHeight": 50.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": null,
+    "maxHeightUnit": "px",
+    "minHeight": null,
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<div id="AlarmsGridHeader" data-tchmi-type="tchmi-grid" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 150.0,
+    "maxWidthUnit": "px",
+    "minWidth": 50.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 150.0,
+    "maxWidthUnit": "px",
+    "minWidth": 50.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 150.0,
+    "maxWidthUnit": "px",
+    "minWidth": 50.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": null,
+    "maxWidthUnit": "px",
+    "minWidth": null,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 150.0,
+    "maxWidthUnit": "px",
+    "minWidth": 50.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<div id="AlarmTypeToggleButton_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Alarms/AlarmTypeToggleButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text="Active" data-tchmi-eventgrid="%ctrl%TcHmiEventGrid%/ctrl%">
+<script data-tchmi-target-attribute="data-tchmi-eventfilter" type="application/json">
+[
+  {
+    "path": "sourceDomain",
+    "comparator": "==",
+    "value": "TcHmiEventLogger"
+  },
+  {
+    "logic": "AND"
+  },
+  {
+    "path": "alarmState",
+    "comparator": "<",
+    "value": 2
+  }
+]
+</script>
+
+</div>%"rl%">
+<script data-tchmi-target-attribute="data-tchmi-eventfilter" type="application/json">
+[
+  {
+    "path": "sourceDomain",
+    "comparator": "==",
+    "value": "TcHmiEventLogger"
+  },
+  {
+    "logic": "AND"
+  },
+  {
+    "path": "alarmState",
+    "comparator": "<",
+    "value": 2
+  }
+]
+</script>
+
+<div id="AlarmTypeToggleButton_3" data-tchmi-type="tchmi-user-control-host" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Alarms/AlarmTypeToggleButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text="Messages" data-tchmi-eventgrid="%ctrl%TcHmiEventGrid%/ctrl%" data-tchmi-grid-column-index="1">
+<script data-tchmi-target-attribute="data-tchmi-eventfilter" type="application/json">
+[
+  {
+    "path": "sourceDomain",
+    "comparator": "==",
+    "value": "TcHmiEventLogger"
+  },
+  {
+    "logic": "AND"
+  },
+  {
+    "path": "type",
+    "comparator": "==",
+    "value": 0
+  }
+]
+</script>
+
+</div>
+
+<div id="AlarmTypeToggleButton_4" data-tchmi-type="tchmi-user-control-host" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Alarms/AlarmTypeToggleButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text="Alarms" data-tchmi-eventgrid="%ctrl%TcHmiEventGrid%/ctrl%" data-tchmi-grid-column-index="2">
+<script data-tchmi-target-attribute="data-tchmi-eventfilter" type="application/json">
+[
+  {
+    "path": "sourceDomain",
+    "comparator": "==",
+    "value": "TcHmiEventLogger"
+  },
+  {
+    "logic": "AND"
+  },
+  {
+    "path": "type",
+    "comparator": "==",
+    "value": 1
+  }
+]
+</script>
+
+</div>
+
+<div id="AlarmTypeToggleButton_6" data-tchmi-type="tchmi-user-control-host" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Alarms/AlarmTypeToggleButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text="All" data-tchmi-eventgrid="%ctrl%TcHmiEventGrid%/ctrl%" data-tchmi-grid-column-index="4">
+<script data-tchmi-target-attribute="data-tchmi-eventfilter" type="application/json">
+[
+  {
+    "path": "sourceDomain",
+    "comparator": "==",
+    "value": "TcHmiEventLogger"
+  }
+]
+</script>
+
+</div>
+
+</div>
+
+<div id="TcHmiEventGrid" data-tchmi-type="tchmi-event-grid" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-show-menu-bar="True" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5">
+<script data-tchmi-target-attribute="data-tchmi-filter" type="application/json">
+[
+  {
+    "path": "domain",
+    "comparator": "==",
+    "value": "TcHmiEventLogger"
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-columns" type="application/json">
+[
+  {
+    "columnName": "type"
+  },
+  {
+    "columnName": "severity"
+  },
+  {
+    "columnName": "text",
+    "width": 30,
+    "widthUnit": "%"
+  },
+  {
+    "columnName": "timeAndDateRaised",
+    "width": 20,
+    "widthUnit": "%"
+  },
+  {
+    "columnName": "timeAndDateConfirmed",
+    "width": 20,
+    "widthUnit": "%"
+  },
+  {
+    "columnName": "timeAndDateCleared",
+    "width": 20,
+    "widthUnit": "%"
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-sorting" type="application/json">
+[
+  {
+    "name": "timeRaised",
+    "order": "Descending"
+  }
+]
+</script>
+
+</div>
+
+</div>
+
+</div>
+
+</div>

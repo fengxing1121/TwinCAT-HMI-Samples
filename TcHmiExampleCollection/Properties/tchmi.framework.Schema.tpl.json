@@ -732,6 +732,9 @@
         "stopPoints"
       ]
     },
+    "Locale": {
+      "$ref": "tchmi:general#/definitions/ProjectLocale"
+    },
     "MeasurementUnit": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "type": "string",
