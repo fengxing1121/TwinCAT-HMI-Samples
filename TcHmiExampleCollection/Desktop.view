@@ -403,7 +403,7 @@
 
 </div>
 
-<div id="TcHmiButton_2" data-tchmi-type="tchmi-button" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="27" data-tchmi-left-unit="px" data-tchmi-text="TcHmiButton_2" data-tchmi-top="20" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+<div id="TcHmiButton_2" data-tchmi-type="tchmi-button" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="27" data-tchmi-left-unit="px" data-tchmi-text="TcHmiButton_2" data-tchmi-top="20" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-visibility="%f%BooleanToVisibility(%s%ServerBoolean%/s%)%/f%">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -434,6 +434,13 @@
 ]
 </script>
 </div>
+
+</div>
+
+<div id="ActuatorPopup_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height="174" data-tchmi-height-unit="px" data-tchmi-left="1303" data-tchmi-left-unit="px" data-tchmi-target-user-control="Devices/Actuator/ActuatorPopup.usercontrol" data-tchmi-top="210" data-tchmi-top-unit="px" data-tchmi-width="199" data-tchmi-width-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-parameters" type="application/json">
+{}
+</script>
 
 </div>
 

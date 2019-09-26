@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TcHmiEditor_SplitAreaStates>{
+  "EditorSettings": [
+    {
+      "Path": "Alarms\\AlarmTypeToggleButton.usercontrol",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    }
+  ]
+}</TcHmiEditor_SplitAreaStates>
+    <TcHmiEditor_SelectBindingWindowDimension>1219;668;1180;728</TcHmiEditor_SelectBindingWindowDimension>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>[
+  266.0,
+  50.0,
+  199.0,
+  50.0,
+  191.0,
+  100.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolServerTree>[
+  280.0,
+  300.0,
+  220.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolServerTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolInternalTree>[
+  300.0,
+  300.0,
+  100.0,
+  50.0,
+  65.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolInternalTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_symbolLocalizedTree>[
+  300.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_symbolLocalizedTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlsTree>[
+  300.0,
+  300.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlsTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolActionTemplateParametersTree>[
+  200.0,
+  300.0,
+  100.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolActionTemplateParametersTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolUserControlParametersTree>[
+  200.0,
+  300.0,
+  200.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolUserControlParametersTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolHistorizedTree>[
+  200.0,
+  50.0,
+  180.0,
+  80.0,
+  80.0,
+  80.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolHistorizedTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_RecipesTree>[
+  300.0,
+  150.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_RecipesTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_RecipeTypesTree>[
+  300.0,
+  180.0,
+  150.0,
+  70.0,
+  70.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_RecipeTypesTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlTypeAttributesTree>[
+  300.0,
+  300.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlTypeAttributesTree>
+  </PropertyGroup>
+</Project>

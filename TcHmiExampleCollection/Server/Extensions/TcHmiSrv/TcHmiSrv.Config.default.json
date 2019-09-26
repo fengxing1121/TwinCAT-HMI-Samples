@@ -25,6 +25,38 @@
     "DEFAULTTIMEZONE": "client",
     "DEFAULTUSERGROUP": "__SystemUsers",
     "DEFINITIONS": {
+        "PLC1.ARRAY (1..10) OF FB_Blink": {
+            "items": {
+                "$ref": "#/definitions/PLC1.FB_Blink"
+            },
+            "maxItems": 10,
+            "minItems": 10,
+            "startOffset": 1,
+            "type": "array"
+        },
+        "PLC1.FB_Blink": {
+            "properties": {
+                "T1_TON": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.TON"
+                },
+                "T2_TOF": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.TOF"
+                },
+                "i_bEnable": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "i_sName": {
+                    "$ref": "tchmi:general#/definitions/STRING(80)"
+                },
+                "i_tTime": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "o_bOut": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                }
+            },
+            "type": "object"
+        },
         "PLC1.ST_MotorParam": {
             "properties": {
                 "D": {
@@ -61,6 +93,52 @@
                 },
                 "Unit": {
                     "$ref": "tchmi:general#/definitions/STRING(80)"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_Standard.TOF": {
+            "properties": {
+                "ET": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "IN": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "M": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "PT": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "Q": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "StartTime": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_Standard.TON": {
+            "properties": {
+                "ET": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "IN": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "M": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "PT": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "Q": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "StartTime": {
+                    "$ref": "tchmi:general#/definitions/TIME"
                 }
             },
             "type": "object"
@@ -1812,6 +1890,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.MAIN.arrFbBlink": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::arrFbBlink",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..10) OF FB_Blink"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.MAIN.fbMotor.Parameters": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -2063,6 +2151,23 @@
                 "function": true
             },
             "USEMAPPING": true
+        },
+        "ServerBoolean": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiSrv",
+            "MAPPING": "",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/Boolean"
+                    },
+                    {
+                        "default": false
+                    }
+                ]
+            },
+            "USEMAPPING": false
         },
         "SetConfiguration": {
             "ACCESS": 3,

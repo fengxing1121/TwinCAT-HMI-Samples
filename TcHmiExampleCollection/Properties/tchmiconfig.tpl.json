@@ -118,6 +118,9 @@
     },
     {
       "url": "Scripts/BooleanToVisibility.js"
+    },
+    {
+      "url": "Scripts/GetSymbolFromArrayIndex.js"
     }
   ],
   "symbols": {

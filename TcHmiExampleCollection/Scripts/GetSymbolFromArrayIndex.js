@@ -9,17 +9,14 @@
 
 (function (TcHmi) {
 
-    var BooleanToVisibility = function (Input) {
-        if (TCHMI_ENABLE_DESIGNER_MODE_MASTER == true) {
-            return "Visible";
-        }
-        if (Input == true) {
-            return "Visible";
-        }
-        else {
-            return "Collapsed";
-        }
+    var GetSymbolFromArrayIndex = function (ArraySymbol, Index) {
+        console.log(ArraySymbol);
+        ArraySymbol.__symbol.__expression.__content = ArraySymbol.__symbol.__expression.__content + "[" + Index + "]";
+        ArraySymbol.__symbol.__expression.__expression = ArraySymbol.__symbol.__expression.__expression.replace("%/s%", "") + "[" + Index + "]%/s%";
+        ArraySymbol.__symbol.__expression.__name = ArraySymbol.__symbol.__expression.__name + "[" + Index + "]";
+        console.log(ArraySymbol);
+        return ArraySymbol;
     };
-    
-    TcHmi.Functions.registerFunction('BooleanToVisibility', BooleanToVisibility);
+
+    TcHmi.Functions.registerFunction('GetSymbolFromArrayIndex', GetSymbolFromArrayIndex);
 })(TcHmi);

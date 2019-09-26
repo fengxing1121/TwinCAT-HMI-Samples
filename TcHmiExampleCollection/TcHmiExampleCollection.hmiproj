@@ -15,7 +15,7 @@
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.203</HmiInitial>
-    <HmiRecent>1.10.1336.340</HmiRecent>
+    <HmiRecent>1.10.1336.354</HmiRecent>
     <CodeBehindOrder>Scripts\TcHmiExampleCollection.js,Trend\TcHmiExampleCollection.Trendline.js,Scripts\TcHmiExampleCollection.Utilities.js,Scripts\TcHmiExampleCollection.Utilities.AutoKeyboard.js,Trend\AddToTrendChart.js,Trend\AddToTrendChartFromUC.js,Trend\GetHistorizedToComboBox.js,Trend\RemoveFromTrendChart.js,Popup\PopupCloseThis.js,Popup\PopupOpen.js,Scripts\DecimalFormatter.js,Scripts\DegreesToRotation.js,Scripts\CheckResolution.js,Scripts\DegreesToRotationWithValveEnable.js,Scripts\DisableContextMenu.js,Scripts\ReadUrlParameter.js,Scripts\ValueToColorFade.js,Scripts\ValueToColorFadeWithMotorEnable.js,Scripts\WriteToSymbolProperty.js</CodeBehindOrder>
     <CodeBehindGlobalCssOrder>Fonts\Fonts.css</CodeBehindGlobalCssOrder>
   </PropertyGroup>
@@ -215,6 +215,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\DisableContextMenu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\GetSymbolFromArrayIndex.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\GetSymbolFromArrayIndex.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\ReadUrlParameter.js">
