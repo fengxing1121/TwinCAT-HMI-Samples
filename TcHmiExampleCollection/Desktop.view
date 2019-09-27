@@ -6,7 +6,7 @@
      data-tchmi-min-height="100" data-tchmi-min-height-unit="%"
      data-tchmi-background-image="Images/Background.png"
      data-tchmi-background-image-height="100" data-tchmi-background-image-width="100"
-     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-creator-viewport-width="1920">
+     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080">
 
 <div id="TcHmiGrid" data-tchmi-type="tchmi-grid" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
 <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
@@ -134,6 +134,16 @@
     "minWidth": null,
     "minWidthUnit": "px",
     "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 100.0,
+    "maxWidthUnit": "px",
+    "minWidth": null,
+    "minWidthUnit": "px",
+    "overflow": false
   }
 ]
 </script>
@@ -169,7 +179,7 @@
 
 </div>
 
-<div id="TcHmiContainer" data-tchmi-type="tchmi-container" data-tchmi-grid-column-index="5" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+<div id="TcHmiContainer" data-tchmi-type="tchmi-container" data-tchmi-grid-column-index="6" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
 
 <div id="TcHmiImage_3" data-tchmi-type="tchmi-image" data-tchmi-height-unit="px" data-tchmi-left="-5" data-tchmi-left-unit="px" data-tchmi-src="Images/Icons/Menu/language_normal.svg" data-tchmi-top="-5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="-5" data-tchmi-bottom="15">
 
@@ -317,7 +327,7 @@
 
 </div>
 
-<div id="TcHmiContainer_1" data-tchmi-type="tchmi-container" data-tchmi-grid-column-index="6" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+<div id="TcHmiContainer_1" data-tchmi-type="tchmi-container" data-tchmi-grid-column-index="7" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
 
 <div id="TcHmiCurrUserTextblock" data-tchmi-type="tchmi-textblock" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Current User" data-tchmi-top="50" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-vertical-alignment="Top" data-tchmi-text-horizontal-alignment="Center">
 
@@ -399,7 +409,7 @@
 
 </div>
 
-<div id="MenuLogoutButton_2" data-tchmi-type="tchmi-user-control-host" data-tchmi-grid-column-index="7" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Menu/MenuLogoutButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-buttontext="Logout" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-passiveicon="Images/Icons/Menu/logout_normal.svg" data-tchmi-hovericon="Images/Icons/Menu/logout_pressed.svg" data-tchmi-selectedicon="Images/Icons/Menu/logout_pressed.svg" data-tchmi-pressedicon="Images/Icons/Menu/logout_active.svg">
+<div id="MenuLogoutButton_2" data-tchmi-type="tchmi-user-control-host" data-tchmi-grid-column-index="8" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Menu/MenuLogoutButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-buttontext="Logout" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-passiveicon="Images/Icons/Menu/logout_normal.svg" data-tchmi-hovericon="Images/Icons/Menu/logout_pressed.svg" data-tchmi-selectedicon="Images/Icons/Menu/logout_pressed.svg" data-tchmi-pressedicon="Images/Icons/Menu/logout_active.svg">
 
 </div>
 
@@ -433,6 +443,10 @@
   }
 ]
 </script>
+</div>
+
+<div id="MenuButton_5" data-tchmi-type="tchmi-user-control-host" data-tchmi-grid-column-index="5" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Menu/MenuButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-buttontext="Examples" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-targetregion="%ctrl%TcHmiContentRegion%/ctrl%" data-tchmi-targetcontent="Examples/Examples.content" data-tchmi-passiveicon="Images/Icons/Menu/message_draggin.svg" data-tchmi-hovericon="Images/Icons/Menu/message_inactive.svg" data-tchmi-selectedicon="Images/Icons/Menu/message_normal.svg" data-tchmi-pressedicon="Images/Icons/Menu/message_active.svg">
+
 </div>
 
 </div>

@@ -1,0 +1,186 @@
+﻿<div id="LedControl" data-tchmi-type="tchmi-user-control" 
+     data-tchmi-top="0" data-tchmi-left="0" 
+     data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
+     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="160">
+
+<div id="TcHmiGrid_5" data-tchmi-type="tchmi-grid" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 2.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": null,
+    "maxWidthUnit": "px",
+    "minWidth": null,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": null,
+    "maxWidthUnit": "px",
+    "minWidth": null,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": null,
+    "maxWidthUnit": "px",
+    "minWidth": null,
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<div id="TcHmiTextbox_6" data-tchmi-type="tchmi-textbox" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="%pp%stLed::sName|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-top="5" data-tchmi-bottom="51" data-tchmi-bottom-unit="%">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextbox_7" data-tchmi-type="tchmi-textbox" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="%pp%stLed::nValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5"90"0" data-tchmi-top="51" data-tchmi-bottom="5">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+
+<div id="TcHmiToggleButton" data-tchmi-type="tchmi-toggle-button" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Toggle" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-state-symbol="%pp%stLed::bControl%/pp%">
+
+</div>
+
+<div id="TcHmiEllipse" data-tchmi-type="tchmi-ellipse" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5">
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%stLed::bStatus%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%stLed::bStatus%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": false
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiEllipse::FillColor%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Color",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "angle": 84.0,
+                "stopPoints": [
+                  {
+                    "color": "rgba(241, 70, 70, 1)",
+                    "stop": "0%"
+                  },
+                  {
+                    "color": "rgba(185, 86, 86, 1)",
+                    "stop": "100%"
+                  }
+                ]
+              }
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiEllipse::FillColor%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Color",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "angle": 84.0,
+                "stopPoints": [
+                  {
+                    "color": "rgba(76, 240, 69, 1)",
+                    "stop": "0%"
+                  },
+                  {
+                    "color": "rgba(86, 185, 97, 1)",
+                    "stop": "100%"
+                  }
+                ]
+              }
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "angle": 90.0,
+  "stopPoints": [
+    {
+      "color": "rgba(214, 214, 214, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(255, 255, 255, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+</div>
+
+</div>
+
+</div>

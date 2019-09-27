@@ -46,6 +46,9 @@
       "url": "Devices/Actuator/ActuatorPopup.usercontrol"
     },
     {
+      "url": "Devices/LedControl/LedControl.usercontrol"
+    },
+    {
       "url": "Menu/MenuButton.usercontrol"
     },
     {
@@ -55,6 +58,14 @@
   "content": [
     {
       "url": "Alarms/Alarms.content",
+      "preload": false
+    },
+    {
+      "url": "Examples/Example_PlcArrayManagement.content",
+      "preload": false
+    },
+    {
+      "url": "Examples/Examples.content",
       "preload": false
     },
     {

@@ -37,6 +37,14 @@
       "type": "object",
       "id": "tchmi:project#/definitions/Devices_Actuator_ActuatorPopup"
     },
+    "Devices_LedControl_LedControl": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "Devices\\LedControl\\LedControl.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Devices_LedControl_LedControl"
+    },
     "Menu_MenuButton": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",

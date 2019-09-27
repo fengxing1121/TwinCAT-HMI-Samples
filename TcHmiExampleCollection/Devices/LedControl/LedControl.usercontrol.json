@@ -1,0 +1,34 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-stled",
+      "displayName": "stLed",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.ST_Led",
+      "category": "",
+      "description": "",
+      "defaultValue": {
+        "bControl": false,
+        "bStatus": false,
+        "nValue": 0.0,
+        "sName": ""
+      },
+      "defaultValueInternal": {
+        "bControl": false,
+        "bStatus": false,
+        "nValue": 0.0,
+        "sName": ""
+      },
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stLed",
+      "propertySetterName": "setStLed",
+      "propertyGetterName": "getStLed"
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

@@ -34,6 +34,15 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY (1..10) OF ST_Led": {
+            "items": {
+                "$ref": "#/definitions/PLC1.ST_Led"
+            },
+            "maxItems": 10,
+            "minItems": 10,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.FB_Blink": {
             "properties": {
                 "T1_TON": {
@@ -53,6 +62,23 @@
                 },
                 "o_bOut": {
                     "$ref": "tchmi:general#/definitions/BOOL"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.ST_Led": {
+            "properties": {
+                "bControl": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bStatus": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "nValue": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "sName": {
+                    "$ref": "tchmi:general#/definitions/STRING(80)"
                 }
             },
             "type": "object"
@@ -1887,6 +1913,16 @@
                 "writeValue": {
                     "type": "string"
                 }
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.HMI.arrStLeds": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::HMI::arrStLeds",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..10) OF ST_Led"
             },
             "USEMAPPING": true
         },

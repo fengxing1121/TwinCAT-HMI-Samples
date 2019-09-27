@@ -106,6 +106,18 @@
     <Content Include="Devices\Actuator\ActuatorPopup.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Devices\LedControl\LedControl.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Devices\LedControl\LedControl.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\Examples.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\Example_PlcArrayManagement.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\Icons\Actuators\blue_sani_valve_30.svg">
       <SubType>Content</SubType>
     </Content>
@@ -309,6 +321,7 @@
     </Content>
     <Folder Include=".hmipkgs" />
     <Folder Include="Devices\Actuator" />
+    <Folder Include="Devices\LedControl" />
     <Folder Include="Images\Icons" />
     <Folder Include="Images\Icons\Actuators" />
     <Folder Include="Images\Icons\Menu" />
@@ -323,6 +336,7 @@
     <Folder Include="Devices" />
     <Folder Include="Menu" />
     <Folder Include="Alarms" />
+    <Folder Include="Examples" />
     <Folder Include="ProcessChart" />
     <Folder Include="Popup" />
     <Folder Include="Scripts" />
