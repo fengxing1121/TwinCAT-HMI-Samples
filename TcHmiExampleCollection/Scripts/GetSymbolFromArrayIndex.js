@@ -10,11 +10,10 @@
 (function (TcHmi) {
 
     var GetSymbolFromArrayIndex = function (ArraySymbol, Index) {
-        console.log(ArraySymbol);
+		// Just editing the symbol expression
         ArraySymbol.__symbol.__expression.__content = ArraySymbol.__symbol.__expression.__content + "[" + Index + "]";
         ArraySymbol.__symbol.__expression.__expression = ArraySymbol.__symbol.__expression.__expression.replace("%/s%", "") + "[" + Index + "]%/s%";
         ArraySymbol.__symbol.__expression.__name = ArraySymbol.__symbol.__expression.__name + "[" + Index + "]";
-        console.log(ArraySymbol);
         return ArraySymbol;
     };
 
