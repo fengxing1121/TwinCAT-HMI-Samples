@@ -1,0 +1,50 @@
+﻿{
+  "function": {
+    "name": "RequestHistorizedDataOfSymbol",
+    "displayName": "RequestHistorizedDataOfSymbol",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Object"
+    },
+    "arguments": [
+      {
+        "name": "SymbolName",
+        "displayName": "SymbolName",
+        "type": "tchmi:general#/definitions/String",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "StartTime",
+        "displayName": "StartTime",
+        "type": "tchmi:general#/definitions/String",
+        "description": "",
+        "defaultValue": "First",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "EndTime",
+        "displayName": "EndTime",
+        "type": "tchmi:general#/definitions/String",
+        "description": "",
+        "defaultValue": "Latest",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

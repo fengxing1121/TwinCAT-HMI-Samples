@@ -1,0 +1,193 @@
+﻿<div id="Trendline_1" data-tchmi-type="tchmi-content" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-min-width="100" data-tchmi-min-width-unit="%" data-tchmi-min-height="100" data-tchmi-min-height-unit="%">
+
+<div id="TcHmiGrid_6" data-tchmi-type="tchmi-grid" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": null,
+    "maxWidthUnit": "px",
+    "minWidth": null,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 3.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": null,
+    "maxWidthUnit": "px",
+    "minWidth": null,
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<div id="PlotterAreaHolder" data-tchmi-type="tchmi-html-host" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5">
+    <div id="PlotterArea" style="width: 100%; height: 100%;">
+
+    </div>
+    <script>
+        setTimeout(function () { TcHmiExampleCollection.Plotter.initChart(0, 0, function () { console.log("Plot Init"); }); }, 200);
+        
+    </script>
+
+</div>    
+
+TcHmiExampleCollection.Plotter.initChart(0,0, function() {console.log("Plot Init");});<div id="TcHmiGrid_7" data-tchmi-type="tchmi-grid" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5">
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": 100.0,
+    "maxHeightUnit": "px",
+    "minHeight": null,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": 100.0,
+    "maxHeightUnit": "px",
+    "minHeight": null,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": 100.0,
+    "maxHeightUnit": "px",
+    "minHeight": null,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": 100.0,
+    "maxHeightUnit": "px",
+    "minHeight": null,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": 100.0,
+    "maxHeightUnit": "px",
+    "minHeight": null,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeight": null,
+    "maxHeightUnit": "px",
+    "minHeight": null,
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+
+
+<div id="TcHmiButton_5" data-tchmi-type="tchmi-button" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="init" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="5" data-tchmi-bottom="5">
+
+
+        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+            [
+            {
+            "event": "TcHmiButton_5.onPressed",
+            "actions": [
+            {
+            "objectType": "JavaScript",
+            "active": true,
+            "sourceLines": [
+            "TcHmiExampleCollection.Plotter.initChart(0,0, function() {console.log(\"Plot Init\");});"
+            ],
+            "injectContextObject": false,
+            "asyncWait": true,
+            "waitMode": "Synchronous"
+            }
+            ]
+            }
+            ]
+        </script>
+    </div>
+
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" id="TcHmiButton_6" data-tchmi-type="tchmi-button" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Draw" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="5" data-tchmi-bottom="5">
+
+
+        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+            [
+            {
+            "event": "TcHmiButton_6.onPressed",
+            "actions": [
+            {
+            "objectType": "JavaScript",
+            "active": true,
+            "sourceLines": [
+            "TcHmiExampleCollection.Plotter.collectData();"
+            ],
+            "injectContextObject": false,
+            "asyncWait": true,
+            "waitMode": "Synchronous"
+            }
+            ]
+            }
+            ]
+        </script>
+    </div>
+
+</div>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiGrid_6.onInitialized",
+    "actions": []
+  }
+]
+</script>
+</div>
+
+</div>

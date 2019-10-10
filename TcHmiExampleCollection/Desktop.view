@@ -144,6 +144,16 @@
     "minWidth": null,
     "minWidthUnit": "px",
     "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 100.0,
+    "maxWidthUnit": "px",
+    "minWidth": null,
+    "minWidthUnit": "px",
+    "overflow": false
   }
 ]
 </script>
@@ -413,48 +423,13 @@
 
 </div>
 
-<div id="TcHmiButton_2" data-tchmi-type="tchmi-button" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="27" data-tchmi-left-unit="px" data-tchmi-text="TcHmiButton_2" data-tchmi-top="20" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-visibility="%f%BooleanToVisibility(%s%ServerBoolean%/s%)%/f%">
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_2.onPressed",
-    "actions": [
-      {
-        "objectType": "Function",
-        "active": true,
-        "fn": "BooleanToVisibility",
-        "fnParams": [
-          {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:general#/definitions/Boolean",
-            "value": false
-          },
-          {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:framework#/definitions/Visibility",
-            "value": "Collapsed"
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
-</div>
-
 <div id="MenuButton_5" data-tchmi-type="tchmi-user-control-host" data-tchmi-grid-column-index="5" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Menu/MenuButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-buttontext="Examples" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-targetregion="%ctrl%TcHmiContentRegion%/ctrl%" data-tchmi-targetcontent="Examples/Examples.content" data-tchmi-passiveicon="Images/Icons/Menu/message_draggin.svg" data-tchmi-hovericon="Images/Icons/Menu/message_inactive.svg" data-tchmi-selectedicon="Images/Icons/Menu/message_normal.svg" data-tchmi-pressedicon="Images/Icons/Menu/message_active.svg">
 
 </div>
 
-</div>
+<div id="MenuButton_7" data-tchmi-type="tchmi-user-control-host" data-tchmi-grid-column-index="9" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Menu/MenuButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-buttontext="Plotter" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-targetregion="%ctrl%TcHmiContentRegion%/ctrl%" data-tchmi-targetcontent="Plotter/Plotter.content" data-tchmi-passiveicon="Images/Icons/Menu/blue_diagram.svg" data-tchmi-hovericon="Images/Icons/Menu/grey_diagram.svg" data-tchmi-selectedicon="Images/Icons/Menu/black_diagram.svg" data-tchmi-pressedicon="Images/Icons/Menu/white_diagram.svg">
 
-<div id="ActuatorPopup_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height="174" data-tchmi-height-unit="px" data-tchmi-left="1303" data-tchmi-left-unit="px" data-tchmi-target-user-control="Devices/Actuator/ActuatorPopup.usercontrol" data-tchmi-top="210" data-tchmi-top-unit="px" data-tchmi-width="199" data-tchmi-width-unit="px">
-<script data-tchmi-target-attribute="data-tchmi-parameters" type="application/json">
-{}
-</script>
+</div>
 
 </div>
 

@@ -160,9 +160,17 @@
 
 </div>
 
+<div id="MenuButton_8" data-tchmi-type="tchmi-user-control-host" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Menu/MenuButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-buttontext="Custom Plotter" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-targetregion="%ctrl%TcHmiExamplesRegion%/ctrl%" data-tchmi-targetcontent="Plotter/Plotter.content" data-tchmi-passiveicon="Images/Icons/Menu/blue_diagram.svg" data-tchmi-hovericon="Images/Icons/Menu/grey_diagram.svg" data-tchmi-selectedicon="Images/Icons/Menu/black_diagram.svg" data-tchmi-pressedicon="Images/Icons/Menu/white_diagram.svg">
+
 </div>
 
-<div id="TcHmiExamplesRegion" data-tchmi-type="tchmi-region" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+<div id="MenuButton_9" data-tchmi-type="tchmi-user-control-host" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="Menu/MenuButton.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-buttontext="External 3D Library" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-targetregion="%ctrl%TcHmiExamplesRegion%/ctrl%" data-tchmi-targetcontent="Examples/Example_External3dLib.content" data-tchmi-passiveicon="Images/Icons/Menu/blue_diagram.svg" data-tchmi-hovericon="Images/Icons/Menu/grey_diagram.svg" data-tchmi-selectedicon="Images/Icons/Menu/black_diagram.svg" data-tchmi-pressedicon="Images/Icons/Menu/white_diagram.svg">
+
+</div>
+
+</div>
+
+<div id="TcHmiExamplesRegion" data-tchmi-type="tchmi-region" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-target-content="Examples/Examples_Main.content">
 
 </div>
 

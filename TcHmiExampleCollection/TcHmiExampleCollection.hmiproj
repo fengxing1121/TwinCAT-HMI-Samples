@@ -11,12 +11,12 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiExampleCollection</Name>
-    <HmiCommunicationRouterPort>10105</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10106</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.203</HmiInitial>
     <HmiRecent>1.10.1336.354</HmiRecent>
-    <CodeBehindOrder>Scripts\TcHmiExampleCollection.js,Trend\TcHmiExampleCollection.Trendline.js,Scripts\TcHmiExampleCollection.Utilities.js,Scripts\TcHmiExampleCollection.Utilities.AutoKeyboard.js,Trend\AddToTrendChart.js,Trend\AddToTrendChartFromUC.js,Trend\GetHistorizedToComboBox.js,Trend\RemoveFromTrendChart.js,Popup\PopupCloseThis.js,Popup\PopupOpen.js,Scripts\DecimalFormatter.js,Scripts\DegreesToRotation.js,Scripts\CheckResolution.js,Scripts\DegreesToRotationWithValveEnable.js,Scripts\DisableContextMenu.js,Scripts\ReadUrlParameter.js,Scripts\ValueToColorFade.js,Scripts\ValueToColorFadeWithMotorEnable.js,Scripts\WriteToSymbolProperty.js</CodeBehindOrder>
+    <CodeBehindOrder>Examples\External3dLib\three.min.js,Examples\External3dLib\STLLoader.js,Examples\External3dLib\WebGL.js,Examples\External3dLib\stats.min.js,Scripts\TcHmiExampleCollection.js,Trend\TcHmiExampleCollection.Trendline.js,Scripts\TcHmiExampleCollection.Utilities.js,Scripts\TcHmiExampleCollection.Utilities.AutoKeyboard.js,Trend\AddToTrendChart.js,Trend\AddToTrendChartFromUC.js,Trend\GetHistorizedToComboBox.js,Trend\RemoveFromTrendChart.js,Popup\PopupCloseThis.js,Popup\PopupOpen.js,Scripts\DecimalFormatter.js,Scripts\DegreesToRotation.js,Scripts\CheckResolution.js,Scripts\DegreesToRotationWithValveEnable.js,Scripts\DisableContextMenu.js,Scripts\ReadUrlParameter.js,Scripts\ValueToColorFade.js,Scripts\ValueToColorFadeWithMotorEnable.js,Scripts\WriteToSymbolProperty.js,Examples\External3dLib\Example_External3dLib.js,Plotter\plotly-1.50.0.min.js,Plotter\TcHmiExampleCollection.Plotter.js,Scripts\BooleanToVisibility.js,Scripts\GetSymbolFromArrayIndex.js,Scripts\ResolveSymbol.js</CodeBehindOrder>
     <CodeBehindGlobalCssOrder>Fonts\Fonts.css</CodeBehindGlobalCssOrder>
   </PropertyGroup>
   <PropertyGroup>
@@ -112,10 +112,49 @@
     <Content Include="Devices\LedControl\LedControl.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Examples\Example_External3dLib.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Examples\Examples.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Examples\Examples_Main.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Examples\Example_PlcArrayManagement.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\Example_External3dLib.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\models\stl\ascii\pr2_head_pan.stl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\models\stl\ascii\pr2_head_tilt.stl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\models\stl\ascii\slotted_disk.stl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\models\stl\binary\colored.stl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\models\stl\binary\pr2_head_pan.stl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\models\stl\binary\pr2_head_tilt.stl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\stats.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\STLLoader.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\three.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Examples\External3dLib\WebGL.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\Icons\Actuators\blue_sani_valve_30.svg">
@@ -200,6 +239,15 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Menu\MenuButton.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plotter\plotly-1.50.0.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plotter\Plotter.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plotter\TcHmiExampleCollection.Plotter.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Popup\PopupCloseThis.function.json">
@@ -313,6 +361,12 @@
     <Content Include="Trend\RemoveFromTrendChart.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Trend\RequestHistorizedDataOfSymbol.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Trend\RequestHistorizedDataOfSymbol.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Trend\Trendline.content">
       <SubType>Content</SubType>
     </Content>
@@ -322,6 +376,11 @@
     <Folder Include=".hmipkgs" />
     <Folder Include="Devices\Actuator" />
     <Folder Include="Devices\LedControl" />
+    <Folder Include="Examples\External3dLib" />
+    <Folder Include="Examples\External3dLib\models" />
+    <Folder Include="Examples\External3dLib\models\stl" />
+    <Folder Include="Examples\External3dLib\models\stl\ascii\" />
+    <Folder Include="Examples\External3dLib\models\stl\binary" />
     <Folder Include="Images\Icons" />
     <Folder Include="Images\Icons\Actuators" />
     <Folder Include="Images\Icons\Menu" />
@@ -337,6 +396,7 @@
     <Folder Include="Menu" />
     <Folder Include="Alarms" />
     <Folder Include="Examples" />
+    <Folder Include="Plotter" />
     <Folder Include="ProcessChart" />
     <Folder Include="Popup" />
     <Folder Include="Scripts" />

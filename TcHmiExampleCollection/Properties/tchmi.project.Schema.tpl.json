@@ -60,6 +60,18 @@
       "frameworkUserControlConfig": "Menu\\MenuLogoutButton.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/Menu_MenuLogoutButton"
+    },
+    "Symbol_Of_String": {
+      "allOf": [
+        {
+          "$ref": "tchmi:framework#/definitions/Symbol"
+        },
+        {
+          "frameworkSymbolSubType": {
+            "$ref": "tchmi:general#/definitions/String"
+          }
+        }
+      ]
     }
   }
 }

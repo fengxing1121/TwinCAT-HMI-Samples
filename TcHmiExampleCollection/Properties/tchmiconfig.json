@@ -61,6 +61,10 @@
       "preload": false
     },
     {
+      "url": "Examples/Example_External3dLib.content",
+      "preload": false
+    },
+    {
       "url": "Examples/Example_PlcArrayManagement.content",
       "preload": false
     },
@@ -69,7 +73,15 @@
       "preload": false
     },
     {
+      "url": "Examples/Examples_Main.content",
+      "preload": false
+    },
+    {
       "url": "Keyboard/Keyboard.content",
+      "preload": false
+    },
+    {
+      "url": "Plotter/Plotter.content",
       "preload": false
     },
     {
@@ -132,6 +144,9 @@
     },
     {
       "url": "Scripts/GetSymbolFromArrayIndex.js"
+    },
+    {
+      "url": "Trend/RequestHistorizedDataOfSymbol.js"
     }
   ],
   "symbols": {
