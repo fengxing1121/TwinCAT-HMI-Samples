@@ -3,6 +3,7 @@ My collection of TwinCAT HMI Sample material. I try to stash here the most asked
 Everything here is "use at your own risk" type of code. I take no responsibility if it makes or brakes something.
 
 ## Contents
+
 ### Keyboard
 - Layout file: Keyboard/Keyboard.content is the keyboard that becomes visible
 - Script file: Scripts/TcHmiExampleCollection.Utilities.AutoKeyboard.js 
@@ -30,6 +31,17 @@ Selection of different kind of (process) device templates
 - GetHistorizedToComboBox.js : Framework Function to collect historized symbols to a combobox
 - RemoveFromTrendChart.js : Framework Function to remove symbol from trendline
 - TcHmiExampleCollection.Trendline.js : Templates, holders and internal use scripts for trendline functionality
+- RequestHistorizedDataOfSymbol.js : Framework function to request data from Historizer Extension
+
+### Plotter
+- Plotter.content : How to use third party library for plotting data in HMI (Plotly)
+- TcHmiExampleCollection.Plotter.js : Functions to use with plotter
+
+### External 3D Library
+- Example_External3dLib.content : How to include Three.js and WebGL
+
+### PLC Array Management
+- Example_PlcArrayManagement.content : How to get it on with PLC arrays and usercontrols
 
 ### Scripts
 General collection of useful stuff
@@ -43,6 +55,7 @@ General collection of useful stuff
   - getClickPressCoordinates : Get coordinates where user clicked
   - generateUuidv4 : Generate Uuids
   - TwoPointScaling : Calculate scaling for value between yMin, yMax, xMin, xMax
+  - downloadCSV : CSV handling with arrays
 - DegreesToRotation.js : Generates rotating translation for a element from degree value input
   - DegreesToRotationWithValveEnable.js : Special use of this for Actuator.usercontrol
 - DisableContextMenu.js : Disable (right click) context menu in a published project
