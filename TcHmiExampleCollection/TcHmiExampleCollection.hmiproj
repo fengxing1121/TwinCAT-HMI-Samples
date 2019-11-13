@@ -15,7 +15,7 @@
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.203</HmiInitial>
-    <HmiRecent>1.10.1336.354</HmiRecent>
+    <HmiRecent>1.10.1336.340</HmiRecent>
     <CodeBehindOrder>Examples\External3dLib\three.min.js,Examples\External3dLib\STLLoader.js,Examples\External3dLib\WebGL.js,Examples\External3dLib\stats.min.js,Scripts\TcHmiExampleCollection.js,Trend\TcHmiExampleCollection.Trendline.js,Scripts\TcHmiExampleCollection.Utilities.js,Scripts\TcHmiExampleCollection.Utilities.AutoKeyboard.js,Trend\AddToTrendChart.js,Trend\AddToTrendChartFromUC.js,Trend\GetHistorizedToComboBox.js,Trend\RemoveFromTrendChart.js,Popup\PopupCloseThis.js,Popup\PopupOpen.js,Scripts\DecimalFormatter.js,Scripts\DegreesToRotation.js,Scripts\CheckResolution.js,Scripts\DegreesToRotationWithValveEnable.js,Scripts\DisableContextMenu.js,Scripts\ReadUrlParameter.js,Scripts\ValueToColorFade.js,Scripts\ValueToColorFadeWithMotorEnable.js,Scripts\WriteToSymbolProperty.js,Examples\External3dLib\Example_External3dLib.js,Plotter\plotly-1.50.0.min.js,Plotter\TcHmiExampleCollection.Plotter.js,Scripts\BooleanToVisibility.js,Scripts\GetSymbolFromArrayIndex.js,Scripts\ResolveSymbol.js</CodeBehindOrder>
     <CodeBehindGlobalCssOrder>Fonts\Fonts.css</CodeBehindGlobalCssOrder>
   </PropertyGroup>
@@ -92,6 +92,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Alarms\AlarmTypeToggleButton.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CustomLogin.html">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Devices\Actuator\Actuator.usercontrol">
@@ -265,6 +268,9 @@
     <Content Include="ProcessChart\ProcessChart.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="REST\api.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Scripts\BooleanToVisibility.function.json">
       <SubType>Content</SubType>
     </Content>
@@ -275,6 +281,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\DisableContextMenu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\GetLoggedSystemEvents.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\GetLoggedSystemEvents.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\GetSymbolFromArrayIndex.function.json">
@@ -396,6 +408,7 @@
     <Folder Include="Menu" />
     <Folder Include="Alarms" />
     <Folder Include="Examples" />
+    <Folder Include="REST" />
     <Folder Include="Plotter" />
     <Folder Include="ProcessChart" />
     <Folder Include="Popup" />

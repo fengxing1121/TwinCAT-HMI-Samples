@@ -232,7 +232,16 @@
             "STARTUPTYPE": 1
         }
     },
-    "FILES": {},
+    "FILES": {
+        "/": {
+            "ACCESS": 3,
+            "LOGINPAGE": "/CustomLogin.html"
+        },
+        "www/Default.html": {
+            "ACCESS": 3,
+            "LOGINPAGE": "/CustomLogin.html"
+        }
+    },
     "FLOODPROTECTION": 500,
     "GLOBALHTTPHEADERS": "{LASTMODIFIED}",
     "GZIPENABLED": true,
@@ -2897,6 +2906,17 @@
     "THREADPOOLSIZE": 12,
     "UPLOADTIMEOUT": "PT5S",
     "USERGROUPS": {
+        "Admin": {
+            "ENABLED": true,
+            "FILEACCESS": 3,
+            "FILES": {},
+            "SYMBOLACCESS": 3,
+            "SYMBOLS": {
+                "IsAuthRequired": 3,
+                "ListUsers": 3,
+                "Login": 3
+            }
+        },
         "__SystemAdministrators": {
             "ENABLED": true,
             "FILEACCESS": 3,
@@ -2908,6 +2928,7 @@
             "ENABLED": true,
             "FILEACCESS": 0,
             "FILES": {
+                "/CustomLogin.html": 3,
                 "/FavIcon.ico": 1
             },
             "SYMBOLACCESS": 0,

@@ -4,7 +4,7 @@
   "locale": "client",
   "scaleMode": "None",
   "startupView": "Desktop.view",
-  "loginPage": null,
+  "loginPage": "/CustomLogin.html",
   "tcHmiServer": {
     "websocketIntervalTime": 200,
     "websocketTimeout": 5000,
@@ -147,6 +147,9 @@
     },
     {
       "url": "Trend/RequestHistorizedDataOfSymbol.js"
+    },
+    {
+      "url": "Scripts/GetLoggedSystemEvents.js"
     }
   ],
   "symbols": {

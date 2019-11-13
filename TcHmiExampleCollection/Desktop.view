@@ -46,7 +46,7 @@
 ]
 </script>
 
-<div id="TcHmiContentRegion" data-tchmi-type="tchmi-region" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-target-content="ProcessChart/ProcessChart.content" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-grid-row-index="1">
+<div id="TcHmiContentRegion" data-tchmi-type="tchmi-region" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-target-content="ProcessChart/ProcessChart.content" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-grid-row-index="1" data-tchmi-height-unit="px">
 
 
 
@@ -431,6 +431,27 @@
 
 </div>
 
+</div>
+
+<div id="TcHmiButton_7" data-tchmi-type="tchmi-button" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="149" data-tchmi-left-unit="px" data-tchmi-text="TcHmiButton_7" data-tchmi-top="170" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_7.onPressed",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "GetLoggedSystemEvents",
+        "fnParams": [],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
 </div>
 
 </div>
