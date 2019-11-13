@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script type="text/javascript">
+        function SendCommand()
+        {
+            //Get the complete url from browser and splitting the url at "?" in an array, e.g. http://127.0.0.1:1010/REST/api.html?Command=getVariable
+            let paramArray = window.location.href.split('?');
+            //Create temp variables for the path parameter
+            let pathParam = "";
+
+            //Search in paramArray of splitted url for 'View=', e.g. "View=View1"
+            for (i = 0; i < paramArray.length; i++) {
+                if (paramArray[i].indexOf('View=') === 0) {
+                    pathParam = paramArray[i].split('/').join('');
+                    break;
+                }
+            }
+
+            //Setting of viewName depending on pathParam
+            if (pathParam === "View=Desktop") {
+                TcHmi.View.load('Desktop.view', function (data) {
+                    //Optional: Callback after the page is loaded
+                });
+            }
+            else if (pathParam === "View=Tablet") {
+                TcHmi.View.load('Tablet.view', function (data) {
+                    //Optional: Callback after the page is loaded
+                });
+            }
+            else if (pathParam === "View=Mobile") {
+                TcHmi.View.load('Mobile.view', function (data) {
+                    //Optional: Callback after the page is loaded
+                });
+            }
+
+            function getVariable(variable) {
+
+            }
+
+
+            var ws = new WebSocket("ws://127.0.0.1:3002/");
+
+            ws.onopen = function()
+            {
+                var message = {
+                     "requestType": "ReadWrite",
+                     "commands": [
+                      {
+                       "commandOptions": [ "SendErrorMessage", "SendWriteValue" ],
+                       "symbol": "ListSymbolNames"
+                      }
+                     ]
+                    };
+                ws.send(JSON.stringify(message));
+            };
+
+            ws.onmessage = function (messageEvent)
+            {
+                var jsonObj = JSON.parse(messageEvent.data);
+                if (jsonObj && jsonObj.sessionId) {
+                    session = jsonObj.sessionId;
+                }
+            };
+
+            ws.onclose = function()
+            {
+            };
+
+            ws.onerror = function (errorEvent) {
+                log("WebSocket error!");
+                log("Error: " + errorEvent.data);
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
