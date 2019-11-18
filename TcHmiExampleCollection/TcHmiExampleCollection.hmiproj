@@ -361,6 +361,12 @@
     <Content Include="Trend\AddToTrendChartFromUC.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Trend\CreateTrendLineChartLineGraphDescriptionDefinitionList.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Trend\CreateTrendLineChartLineGraphDescriptionDefinitionList.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Trend\GetHistorizedToComboBox.function.json">
       <SubType>Content</SubType>
     </Content>

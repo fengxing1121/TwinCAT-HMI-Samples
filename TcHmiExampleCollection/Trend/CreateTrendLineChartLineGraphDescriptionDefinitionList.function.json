@@ -1,0 +1,28 @@
+﻿{
+  "function": {
+    "name": "CreateTrendLineChartLineGraphDescriptionDefinitionList",
+    "displayName": "CreateTrendLineChartLineGraphDescriptionDefinitionList",
+    "visible": true,
+    "category": "",
+    "waitMode": "Synchronous",
+    "injectContextObject": false,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:framework#/definitions/TrendLineChartLineGraphDescriptionDefinitionList"
+    },
+    "arguments": [
+      {
+        "name": "TrendSymbol",
+        "displayName": "TrendSymbol",
+        "type": "tchmi:project#/definitions/Symbol_Of_Symbol",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}

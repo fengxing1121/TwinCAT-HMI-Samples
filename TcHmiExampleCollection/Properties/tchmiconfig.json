@@ -150,6 +150,9 @@
     },
     {
       "url": "Scripts/GetLoggedSystemEvents.js"
+    },
+    {
+      "url": "Trend/CreateTrendLineChartLineGraphDescriptionDefinitionList.js"
     }
   ],
   "symbols": {
