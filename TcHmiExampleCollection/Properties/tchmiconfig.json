@@ -153,6 +153,9 @@
     },
     {
       "url": "Trend/CreateTrendLineChartLineGraphDescriptionDefinitionList.js"
+    },
+    {
+      "url": "Scripts/Animate.js"
     }
   ],
   "symbols": {

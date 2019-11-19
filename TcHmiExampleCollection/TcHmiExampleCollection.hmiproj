@@ -271,6 +271,12 @@
     <Content Include="REST\api.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Scripts\Animate.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\Animate.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Scripts\BooleanToVisibility.function.json">
       <SubType>Content</SubType>
     </Content>

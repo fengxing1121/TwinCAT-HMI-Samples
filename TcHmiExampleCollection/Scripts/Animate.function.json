@@ -1,0 +1,50 @@
+﻿{
+  "function": {
+    "name": "Animate",
+    "displayName": "Animate",
+    "visible": true,
+    "category": "Animation",
+    "waitMode": "Asynchronous",
+    "injectContextObject": true,
+    "description": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": "",
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "ControlElement",
+        "displayName": "ControlElement",
+        "type": "tchmi:framework#/definitions/TcHmiControl",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      },
+      {
+        "name": "Cleanup",
+        "displayName": "Cleanup",
+        "type": "tchmi:general#/definitions/Boolean",
+        "description": "",
+        "defaultValue": true,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false
+      }
+    ]
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/FunctionDescription.Schema.json"
+}
