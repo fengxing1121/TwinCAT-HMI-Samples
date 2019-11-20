@@ -44,10 +44,19 @@ Selection of different kind of (process) device templates
 - Example_PlcArrayManagement.content : How to get it on with PLC arrays and usercontrols
 
 ### Scripts
-General collection of useful stuff
+General collection of some generic but sometimes useful stuff
+- Animate.js : Do predefined animations (Really WIP) 
+- BooleanToVisibility.js : Returns visibility from boolean
+- CheckResolution.js : Check window size and change View accordingly
 - DecimalFormatter.js : Framework Function to format decimals of numbers
-- DegreesToRotation.js : Framework Function to turn numbers to transform-list
-- WriteToSymbolProperty.js : Framework Function to write value to (struct) symbols property
+- DegreesToRotation.js : Generates rotating translation for a element from degree value input
+  - DegreesToRotationWithValveEnable.js : Special use of this for Actuator.usercontrol
+- DisableContextMenu.js : Disable (right click) context menu in a published project
+- GetLoggedSystemEvents.js : Requests system events and exports them in downloadable CSV
+- GetSymbolFromArrayIndex.js : Returns a symbol of a array symbols index
+- OpenLinkInNewTab.js : Opens a new tab with URL parameter
+- ReadUrlParameter.js : Read GET-parameters from URL for e.g. changing View
+- ResolveSymbol.js : Returns the symbol that is bind to a controls parameter
 - TcHmiExampleCollection.Utilities.js : 
   - dragElement : Make element draggable
   - String prototypes : Useful string functions
@@ -56,9 +65,6 @@ General collection of useful stuff
   - generateUuidv4 : Generate Uuids
   - TwoPointScaling : Calculate scaling for value between yMin, yMax, xMin, xMax
   - downloadCSV : CSV handling with arrays
-- DegreesToRotation.js : Generates rotating translation for a element from degree value input
-  - DegreesToRotationWithValveEnable.js : Special use of this for Actuator.usercontrol
-- DisableContextMenu.js : Disable (right click) context menu in a published project
-- ReadUrlParameter.js : Read GET-parameters from URL for e.g. changing View
 - ValueToColorFade.js : Generate fading color from value and color endpoints
   - ValueToColorFadeWithMotorEnable.js : Special use of this for Actuator.usercontrol
+- WriteToSymbolProperty.js : Framework Function to write value to (struct) symbols property
