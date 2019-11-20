@@ -301,6 +301,12 @@
     <Content Include="Scripts\GetSymbolFromArrayIndex.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Scripts\OpenLinkInNewTab.function.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\OpenLinkInNewTab.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Scripts\ReadUrlParameter.js">
       <SubType>Content</SubType>
     </Content>

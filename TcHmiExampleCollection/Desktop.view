@@ -444,16 +444,11 @@
       {
         "objectType": "Function",
         "active": true,
-        "fn": "Animate",
+        "fn": "OpenLinkInNewTab",
         "fnParams": [
           {
             "objectType": "Symbol",
-            "symbolExpression": "%ctrl%TcHmiButton_7%/ctrl%"
-          },
-          {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:general#/definitions/Boolean",
-            "value": true
+            "symbolExpression": "%ctrl%TcHmiTextblock_16::Text%/ctrl%"
           }
         ],
         "asyncWait": true
@@ -462,6 +457,22 @@
   }
 ]
 </script>
+</div>
+
+<div id="TcHmiTextbox_8" data-tchmi-type="tchmi-textbox" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="466" data-tchmi-left-unit="px" data-tchmi-text="TcHmiTextbox_8" data-tchmi-top="34" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+
+<div id="TcHmiTextblock_16" data-tchmi-type="tchmi-textblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="421" data-tchmi-left-unit="px" data-tchmi-text="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch" data-tchmi-top="152" data-tchmi-top-unit="px" data-tchmi-width="449" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+
 </div>
 
 </div>
